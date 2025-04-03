@@ -380,124 +380,159 @@ header.scrolled .hamburger span {
     }
 }
 
-/* About Section Styles */
+/* About Section - Compact Version */
 .about-section {
-    padding: 80px 0;
-    background-color: var(--peanut-cream);
-    position: relative;
-    overflow: hidden;
+    padding: 60px 0;
+    background-color: var(--cream);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .about-content {
-    max-width: 800px;
-    margin: 0 auto 60px;
+    max-width: 600px;
+    margin: 0 auto 40px;
     text-align: center;
 }
 
 .about-content h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--moss-green);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--sage-green);
-    margin-bottom: 30px;
-    font-weight: 500;
-}
-
-.about-text {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    display: block;
 }
 
 .about-text p {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     line-height: 1.6;
     color: var(--dark-text);
 }
 
-/* Image Gallery Styles */
-.image-gallery-container {
-    position: relative;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.image-gallery {
+.stats-container {
     display: flex;
-    gap: 20px;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    padding: 10px 0;
+    justify-content: center;
+    gap: 30px;
+    margin: 25px 0;
 }
 
-.gallery-item {
-    min-width: 300px;
-    height: 400px;
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--moss-green);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--sage-green);
+}
+
+.btn.with-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Compact Scrollable Gallery */
+.gallery-wrapper {
     position: relative;
-    border-radius: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.scrollable-gallery {
+    display: flex;
+    gap: 15px;
+    padding: 10px 0;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+
+.scrollable-gallery::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+.gallery-card {
+    scroll-snap-align: start;
+    min-width: 280px;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    flex-shrink: 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    background: white;
 }
 
-.gallery-item img {
+.gallery-card:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-card img {
     width: 100%;
-    height: 100%;
+    height: 180px;
     object-fit: cover;
-    transition: transform 0.5s ease;
 }
 
-.gallery-item:hover img {
-    transform: scale(1.05);
+.card-content {
+    padding: 15px;
 }
 
-.image-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
-    color: white;
-    font-weight: 500;
+.card-content h3 {
     font-size: 1.1rem;
+    color: var(--moss-green);
+    margin-bottom: 5px;
 }
 
-/* Responsive Styles */
+.card-content p {
+    font-size: 0.9rem;
+    color: var(--dark-text);
+    line-height: 1.4;
+}
+
+.scroll-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 15px;
+    color: var(--sage-green);
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    .about-section {
-        padding: 60px 0;
+    .stats-container {
+        flex-direction: column;
+        gap: 15px;
     }
     
-    .about-content h2 {
-        font-size: 2rem;
-    }
-    
-    .gallery-item {
-        min-width: 250px;
-        height: 350px;
+    .gallery-card {
+        min-width: 240px;
     }
 }
 
-@media (max-width: 576px) {
-    .about-content {
-        margin-bottom: 40px;
-    }
-    
+@media (max-width: 480px) {
     .about-content h2 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
     
-    .subtitle {
-        font-size: 1rem;
-    }
-    
-    .gallery-item {
+    .gallery-card {
         min-width: 200px;
-        height: 300px;
     }
 }
