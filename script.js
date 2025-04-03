@@ -90,43 +90,86 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Image Gallery Auto-Scroll
-function setupGalleryAutoScroll() {
-    const gallery = document.querySelector('.image-gallery');
-    const galleryItems = document.querySelectorAll('.gallery-item');
-    const galleryWidth = gallery.scrollWidth;
-    let scrollAmount = 0;
+document.addEventListener('DOMContentLoaded', function() {
+    const track = document.querySelector('.gallery-track');
+    const items = document.querySelectorAll('.gallery-item');
+    const dotsContainer = document.querySelector('.gallery-dots');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    
+    let currentIndex = 0;
     let autoScrollInterval;
-
-    function autoScroll() {
-        scrollAmount += 1;
-        if (scrollAmount >= galleryWidth - gallery.clientWidth) {
-            scrollAmount = 0;
-            gallery.scrollTo({ left: 0, behavior: 'instant' });
-        } else {
-            gallery.scrollLeft = scrollAmount;
-        }
+    const itemWidth = items[0].getBoundingClientRect().width + 20; // Including gap
+    
+    // Create dots
+    items.forEach((_, index) => {
+      const dot = document.createElement('div');
+      dot.classList.add('dot');
+      if (index === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => {
+        goToSlide(index);
+      });
+      dotsContainer.appendChild(dot);
+    });
+    
+    const dots = document.querySelectorAll('.dot');
+    
+    // Update gallery position
+    function updateGallery() {
+      track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+      
+      // Update dots
+      dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentIndex);
+      });
     }
-
+    
+    // Go to specific slide
+    function goToSlide(index) {
+      currentIndex = index;
+      if (currentIndex >= items.length) currentIndex = 0;
+      if (currentIndex < 0) currentIndex = items.length - 1;
+      updateGallery();
+      resetAutoScroll();
+    }
+    
+    // Next slide
+    function nextSlide() {
+      goToSlide(currentIndex + 1);
+    }
+    
+    // Previous slide
+    function prevSlide() {
+      goToSlide(currentIndex - 1);
+    }
+    
+    // Auto-scroll functionality
     function startAutoScroll() {
-        autoScrollInterval = setInterval(autoScroll, 30);
+      autoScrollInterval = setInterval(nextSlide, 5000); // Change every 5 seconds
     }
-
-    function pauseAutoScroll() {
-        clearInterval(autoScrollInterval);
+    
+    function resetAutoScroll() {
+      clearInterval(autoScrollInterval);
+      startAutoScroll();
     }
-
-    // Pause on hover
-    gallery.addEventListener('mouseenter', pauseAutoScroll);
-    gallery.addEventListener('mouseleave', startAutoScroll);
-
+    
+    // Event listeners
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+    
+    // Pause auto-scroll on hover
+    track.addEventListener('mouseenter', () => {
+      clearInterval(autoScrollInterval);
+    });
+    
+    track.addEventListener('mouseleave', startAutoScroll);
+    
     // Start auto-scroll
     startAutoScroll();
-}
-
-// Initialize when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    // ... your existing code ...
     
-    setupGalleryAutoScroll();
-});
+    // Handle window resize
+    window.addEventListener('resize', () => {
+      itemWidth = items[0].getBoundingClientRect().width + 20;
+      updateGallery();
+    });
+  });

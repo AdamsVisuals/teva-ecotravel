@@ -447,73 +447,103 @@ header.scrolled .hamburger span {
     gap: 8px;
 }
 
-/* Compact Scrollable Gallery */
-.gallery-wrapper {
+.gallery-section {
+    padding: 40px 0;
+    background-color: var(--cream); /* Light eco-friendly green */
+    text-align: center;
+  }
+  
+  .gallery-section h2 {
+    color: #2a5c45; /* Teva brand green */
+    margin-bottom: 30px;
+  }
+  
+  .gallery-wrapper {
     position: relative;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-}
-
-.scrollable-gallery {
+    overflow: hidden;
+  }
+  
+  .gallery-track {
     display: flex;
-    gap: 15px;
-    padding: 10px 0;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE/Edge */
-}
-
-.scrollable-gallery::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
-}
-
-.gallery-card {
-    scroll-snap-align: start;
-    min-width: 280px;
+    transition: transform 0.5s ease;
+    gap: 20px;
+    padding: 0 10px;
+  }
+  
+  .gallery-item {
+    min-width: 300px;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background: white;
-}
-
-.gallery-card:hover {
-    transform: translateY(-5px);
-}
-
-.gallery-card img {
+  }
+  
+  .gallery-item img {
     width: 100%;
-    height: 180px;
+    height: 200px;
     object-fit: cover;
-}
-
-.card-content {
+    display: block;
+  }
+  
+  .gallery-caption {
     padding: 15px;
-}
-
-.card-content h3 {
-    font-size: 1.1rem;
-    color: var(--moss-green);
-    margin-bottom: 5px;
-}
-
-.card-content p {
-    font-size: 0.9rem;
-    color: var(--dark-text);
-    line-height: 1.4;
-}
-
-.scroll-indicator {
+    color: #2a5c45;
+    font-weight: 500;
+  }
+  
+  .gallery-nav {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 5px;
-    margin-top: 15px;
-    color: var(--sage-green);
-    font-size: 0.9rem;
-    opacity: 0.8;
-}
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+  }
+  
+  .nav-btn {
+    background: #2a5c45;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s;
+  }
+  
+  .nav-btn:hover {
+    background: #1e4634;
+  }
+  
+  .gallery-dots {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #c8d8d0;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background: #2a5c45;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .gallery-item {
+      min-width: 250px;
+    }
+    
+    .gallery-track {
+      gap: 15px;
+    }
+  }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
