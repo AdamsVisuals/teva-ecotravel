@@ -90,59 +90,43 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Add to your existing script.js
-function setupInteractiveGallery() {
-    const gallery = document.querySelector('.scrollable-gallery');
-    let isDown = false;
-    let startX;
-    let scrollLeft;
+// Image Gallery Auto-Scroll
+function setupGalleryAutoScroll() {
+    const gallery = document.querySelector('.image-gallery');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const galleryWidth = gallery.scrollWidth;
+    let scrollAmount = 0;
+    let autoScrollInterval;
 
-    gallery.addEventListener('mousedown', (e) => {
-        isDown = true;
-        startX = e.pageX - gallery.offsetLeft;
-        scrollLeft = gallery.scrollLeft;
-        gallery.style.cursor = 'grabbing';
-    });
+    function autoScroll() {
+        scrollAmount += 1;
+        if (scrollAmount >= galleryWidth - gallery.clientWidth) {
+            scrollAmount = 0;
+            gallery.scrollTo({ left: 0, behavior: 'instant' });
+        } else {
+            gallery.scrollLeft = scrollAmount;
+        }
+    }
 
-    gallery.addEventListener('mouseleave', () => {
-        isDown = false;
-        gallery.style.cursor = 'grab';
-    });
+    function startAutoScroll() {
+        autoScrollInterval = setInterval(autoScroll, 30);
+    }
 
-    gallery.addEventListener('mouseup', () => {
-        isDown = false;
-        gallery.style.cursor = 'grab';
-    });
+    function pauseAutoScroll() {
+        clearInterval(autoScrollInterval);
+    }
 
-    gallery.addEventListener('mousemove', (e) => {
-        if(!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - gallery.offsetLeft;
-        const walk = (x - startX) * 2;
-        gallery.scrollLeft = scrollLeft - walk;
-    });
+    // Pause on hover
+    gallery.addEventListener('mouseenter', pauseAutoScroll);
+    gallery.addEventListener('mouseleave', startAutoScroll);
 
-    // Touch support for mobile
-    gallery.addEventListener('touchstart', (e) => {
-        isDown = true;
-        startX = e.touches[0].pageX - gallery.offsetLeft;
-        scrollLeft = gallery.scrollLeft;
-    });
-
-    gallery.addEventListener('touchend', () => {
-        isDown = false;
-    });
-
-    gallery.addEventListener('touchmove', (e) => {
-        if(!isDown) return;
-        const x = e.touches[0].pageX - gallery.offsetLeft;
-        const walk = (x - startX) * 2;
-        gallery.scrollLeft = scrollLeft - walk;
-    });
+    // Start auto-scroll
+    startAutoScroll();
 }
 
-// Initialize
+// Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     // ... your existing code ...
-    setupInteractiveGallery();
+    
+    setupGalleryAutoScroll();
 });
