@@ -1130,3 +1130,330 @@ header.scrolled .hamburger span {
         font-size: 1rem;
     }
 }
+
+/* Guides Section Styles */
+.guides-section {
+    padding: 80px 0;
+    background-color: var(--cream);
+}
+
+.section-badge {
+    display: inline-block;
+    background-color: var(--sage-green);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.guides-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--moss-green);
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    color: var(--sage-green);
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.guides-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.guide-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.guide-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card-image {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.guide-card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+.guide-badge {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background-color: rgba(255,255,255,0.9);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--moss-green);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.meta-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+    color: var(--sage-green);
+}
+
+.guide-card h3 {
+    font-size: 1.3rem;
+    color: var(--moss-green);
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.guide-card p {
+    color: var(--dark-text);
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.read-more {
+    color: var(--moss-green);
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.read-more i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.read-more:hover {
+    color: var(--sage-green);
+}
+
+.read-more:hover i {
+    transform: translateX(3px);
+}
+
+.section-footer {
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .guides-section {
+        padding: 60px 0;
+    }
+    
+    .guides-section h2 {
+        font-size: 2rem;
+    }
+    
+    .guides-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .meta-info {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .guide-card h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Pre-Footer Section Styles */
+.pre-footer {
+    padding: 80px 0;
+    background-color: var(--moss-green);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.pre-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/nature-pattern.png');
+    opacity: 0.05;
+    z-index: 0;
+}
+
+.pre-footer-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.text-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.pre-footer h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--peanut-cream);
+}
+
+.pre-footer p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pre-footer .btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pre-footer .btn i {
+    font-size: 0.9em;
+}
+
+.pre-footer .btn.primary {
+    background-color: var(--peanut-cream);
+    color: var(--moss-green);
+    border: 2px solid var(--peanut-cream);
+}
+
+.pre-footer .btn.primary:hover {
+    background-color: transparent;
+    color: var(--peanut-cream);
+}
+
+.pre-footer .btn.secondary {
+    background-color: transparent;
+    color: var(--peanut-cream);
+    border: 2px solid var(--peanut-cream);
+}
+
+.pre-footer .btn.secondary:hover {
+    background-color: var(--peanut-cream);
+    color: var(--moss-green);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255,255,255,0.15);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--sage-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.feature-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--peanut-cream);
+}
+
+.feature-item p {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+    opacity: 0.8;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .pre-footer {
+        padding: 60px 0;
+    }
+    
+    .pre-footer h2 {
+        font-size: 2rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .pre-footer h2 {
+        font-size: 1.8rem;
+    }
+    
+    .pre-footer p {
+        font-size: 1rem;
+    }
+}
