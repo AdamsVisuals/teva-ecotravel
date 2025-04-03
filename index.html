@@ -3,10 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teva Eco-Travel</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Teva Eco Travel - Sustainable Tourism</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!-- Header with Navigation -->
+    <header id="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/Artboard 3 (1).png" alt="Teva Eco Travel Logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-left">
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Experiences</a></li>
+                    <li><a href="#">Eco Tours</a></li>
+                </ul>
+                <ul class="nav-right">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Video Slideshow -->
+    <section class="hero">
+        <div class="video-slideshow">
+            <video autoplay muted loop class="active">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-nature-walk-in-the-forest-2200-large.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop>
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-woman-walking-on-a-path-in-a-forest-3442-large.mp4" type="video/mp4">
+            </video>
+            <video autoplay muted loop>
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-waves-coming-to-the-beach-5016-large.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-content">
+            <h1>Discover Sustainable Travel</h1>
+            <p>Explore the world responsibly with Teva Eco Travel - where adventure meets sustainability</p>
+            <div class="hero-btns">
+                <a href="#" class="btn primary-btn">Explore Tours</a>
+                <a href="#" class="btn secondary-btn">Learn More</a>
+            </div>
+        </div>
+        <div class="slideshow-controls">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
