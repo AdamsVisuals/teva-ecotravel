@@ -13,13 +13,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header with Navigation -->
     <header id="main-header">
         <div class="container">
             <nav class="navbar">
                 <ul class="nav-links left-links">
-                    <li><a href="#">Destinations</a></li>
-                    <li><a href="#">Experiences</a></li>
+                    <li class="dropdown">
+                        <a href="#">Destinations <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#">Serengeti National Park</a></li>
+                                <li><a href="#">Tarangire National Park</a></li>
+                                <li><a href="#">Ngorongoro Conservation Area</a></li>
+                                <li><a href="#">Lake Manyara National Park</a></li>
+                                <li><a href="#">Arusha National Park</a></li>
+                                <li><a href="#">Znzibar Beaches</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Experiences <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#">Bush Walks</a></li>
+                                <li><a href="#">Cultural Experiences</a></li>
+                                <li><a href="#">Zanzibar Holidays</a></li>
+                                <li><a href="#">Family Friendly</a></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
                 
                 <div class="logo">
@@ -49,8 +70,24 @@
         <!-- Mobile Menu -->
         <div class="mobile-menu">
             <ul>
-                <li><a href="#">Destinations</a></li>
-                <li><a href="#">Experiences</a></li>
+                <li class="mobile-dropdown">
+                    <a href="destination.html">Destinations <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">African Safaris</a></li>
+                        <li><a href="#">Asian Adventures</a></li>
+                        <li><a href="#">European Eco-Tours</a></li>
+                        <li><a href="#">South American Treks</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-dropdown">
+                    <a href="experience.html">Experiences <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">Wildlife Watching</a></li>
+                        <li><a href="#">Cultural Immersion</a></li>
+                        <li><a href="#">Eco-Lodges</a></li>
+                        <li><a href="#">Adventure Travel</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Sustainability</a></li>
                 <li><a href="#">Contact</a></li>
