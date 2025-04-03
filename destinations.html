@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teva Eco Travel - Destinations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="./favicon_io" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon_io" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="styles/destinations.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <ul class="nav-links left-links">
+                    <li class="dropdown">
+                        <a href="#">Destinations <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#">Serengeti National Park</a></li>
+                                <li><a href="#">Tarangire National Park</a></li>
+                                <li><a href="#">Ngorongoro Conservation Area</a></li>
+                                <li><a href="#">Lake Manyara National Park</a></li>
+                                <li><a href="#">Arusha National Park</a></li>
+                                <li><a href="#">Znzibar Beaches</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Experiences <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#">Bush Walks</a></li>
+                                <li><a href="#">Cultural Experiences</a></li>
+                                <li><a href="#">Zanzibar Holidays</a></li>
+                                <li><a href="#">Family Friendly</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/Artboard 3 (1).png" alt="Teva Eco Travel">
+                    </a>
+                </div>
+                
+                <ul class="nav-links right-links">
+                    <li><a href="#about-section">About Us</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+                
+                <div class="nav-buttons">
+                    <a href="#" class="btn secondary">Contact</a>
+                    <a href="#" class="btn primary">Book Now</a>
+                </div>
+                
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <ul>
+                <li class="mobile-dropdown">
+                    <a href="destination.html">Destinations <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">African Safaris</a></li>
+                        <li><a href="#">Asian Adventures</a></li>
+                        <li><a href="#">European Eco-Tours</a></li>
+                        <li><a href="#">South American Treks</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-dropdown">
+                    <a href="experience.html">Experiences <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">Wildlife Watching</a></li>
+                        <li><a href="#">Cultural Immersion</a></li>
+                        <li><a href="#">Eco-Lodges</a></li>
+                        <li><a href="#">Adventure Travel</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="btn primary">Book Now</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content (without header/footer) -->
+    <main class="destinations-page">
+<!-- Full-Screen Hero Section -->
+<section class="fullscreen-hero">
+    <!-- Background Slideshow -->
+    <div class="hero-slideshow">
+        <div class="slide active" style="background-image: url('images/hero1.jpg');"></div>
+        <div class="slide" style="background-image: url('images/hero2.jpg');"></div>
+        <div class="slide" style="background-image: url('images/camilla-frederiksen-DDBQWBv-nmk-unsplash.jpg');"></div>
+    </div>
+    
+    <!-- Hero Content -->
+    <div class="hero-content">
+        <div class="container">
+            <h1>Discover <span>Eco-Conscious</span> Adventures</h1>
+            <p class="subtitle">Journey Responsibly Through the World's Most Breathtaking Landscapes</p>
+            
+            <div class="hero-search-bar">
+                <div class="search-input">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" placeholder="Where do you want to explore?">
+                </div>
+                <div class="search-input">
+                    <i class="fas fa-calendar"></i>
+                    <input type="text" placeholder="Travel Dates">
+                </div>
+                <button class="btn primary">
+                    <i class="fas fa-search"></i> Find Trips
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Slideshow Controls -->
+    <div class="hero-controls">
+        <button class="slide-prev"><i class="fas fa-chevron-left"></i></button>
+        <div class="slide-dots"></div>
+        <button class="slide-next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+</section>
+
+        <!-- Featured Destinations -->
+        <section class="featured-destinations">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Eco Certified</span>
+                    <h2>Featured Destinations</h2>
+                    <p class="section-subtitle">Our most popular sustainable travel locations</p>
+                </div>
+
+                <div class="destinations-grid">
+                    <!-- Destination 1 -->
+                    <article class="destination-card large">
+                        <div class="card-image">
+                            <img src="images/kenya-safari.jpg" alt="Kenyan Safari">
+                            <div class="destination-badge">
+                                <i class="fas fa-leaf"></i> Wildlife Focus
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Kenyan Safari Adventure</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.5 (128 reviews)</span>
+                            </div>
+                            <p>Explore the Maasai Mara with our eco-conscious guides, staying at solar-powered lodges that support local communities.</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-calendar-alt"></i> Year-round</span>
+                                <span><i class="fas fa-users"></i> Small groups</span>
+                            </div>
+                            <a href="kenya-safari.html" class="btn primary">Explore Package</a>
+                        </div>
+                    </article>
+
+                    <!-- Destination 2 -->
+                    <article class="destination-card">
+                        <div class="card-image">
+                            <img src="images/costa-rica-rainforest.jpg" alt="Costa Rica Rainforest">
+                            <div class="destination-badge">
+                                <i class="fas fa-tree"></i> Rainforest
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Costa Rica Eco Retreat</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0 (94 reviews)</span>
+                            </div>
+                            <p>Immerse yourself in biodiversity hotspots while supporting conservation projects.</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-calendar-alt"></i> Nov-Apr</span>
+                                <span><i class="fas fa-users"></i> Private tours</span>
+                            </div>
+                            <a href="costa-rica.html" class="btn outline">View Details</a>
+                        </div>
+                    </article>
+
+                    <!-- Destination 3 -->
+                    <article class="destination-card">
+                        <div class="card-image">
+                            <img src="images/norway-fjords.jpg" alt="Norwegian Fjords">
+                            <div class="destination-badge">
+                                <i class="fas fa-water"></i> Sustainable Cruising
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Norwegian Fjords Expedition</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0 (76 reviews)</span>
+                            </div>
+                            <p>Sail through breathtaking fjords on eco-friendly hybrid electric ships.</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-calendar-alt"></i> May-Sep</span>
+                                <span><i class="fas fa-users"></i> Small groups</span>
+                            </div>
+                            <a href="norway-fjords.html" class="btn outline">View Details</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Destinations -->
+        <section class="all-destinations">
+            <div class="container">
+            <div class="section-header">
+            <h2>All Destinations</h2>
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="region-filter">Filter by Region:</label>
+                    <select id="region-filter">
+                    <option value="all">All Regions</option>
+                    <option value="africa">Africa</option>
+                    <option value="americas">Americas</option>
+                    <option value="asia">Asia</option>
+                    <option value="europe">Europe</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="type-filter">Filter by Type:</label>
+                    <select id="type-filter">
+                    <option value="all">All Types</option>
+                    <option value="wildlife">Wildlife</option>
+                    <option value="cultural">Cultural</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="beach">Beach</option>
+                    </select>
+                </div>
+                </div>
+            </div>
+
+            <div class="destinations-list">
+                <!-- Destination Item 1 -->
+                <article class="destination-item" data-region="africa" data-type="wildlife">
+                <div class="item-image">
+                    <img src="images/botswana.jpg" alt="Botswana Safari">
+                </div>
+                <div class="item-content">
+                    <h3>Botswana Wilderness</h3>
+                    <p>Experience the untouched Okavango Delta with eco-friendly mobile safari camps.</p>
+                    <div class="item-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Botswana</span>
+                    <span><i class="fas fa-clock"></i> 10-14 days</span>
+                    </div>
+                    <a href="botswana.html" class="btn link">Explore <i class="fas fa-chevron-right"></i></a>
+                </div>
+                </article>
+
+                <!-- Destination Item 2 -->
+                <article class="destination-item" data-region="africa" data-type="wildlife">
+                <div class="item-image">
+                    <img src="images/serengeti.jpg" alt="Serengeti National Park">
+                </div>
+                <div class="item-content">
+                    <h3>Serengeti National Park</h3>
+                    <p>Witness the Great Migration and explore the vast savannahs of Tanzania.</p>
+                    <div class="item-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Tanzania</span>
+                    <span><i class="fas fa-clock"></i> 7-10 days</span>
+                    </div>
+                    <a href="serengeti.html" class="btn link">Explore <i class="fas fa-chevron-right"></i></a>
+                </div>
+                </article>
+
+                <!-- Destination Item 3 -->
+                <article class="destination-item" data-region="africa" data-type="wildlife">
+                <div class="item-image">
+                    <img src="images/ngorongoro.jpg" alt="Ngorongoro Crater">
+                </div>
+                <div class="item-content">
+                    <h3>Ngorongoro Crater</h3>
+                    <p>Explore the world's largest intact volcanic caldera, home to diverse wildlife.</p>
+                    <div class="item-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Tanzania</span>
+                    <span><i class="fas fa-clock"></i> 5-8 days</span>
+                    </div>
+                    <a href="ngorongoro.html" class="btn link">Explore <i class="fas fa-chevron-right"></i></a>
+                </div>
+                </article>
+
+                <!-- Destination Item 4 -->
+                <article class="destination-item" data-region="africa" data-type="wildlife">
+                <div class="item-image">
+                    <img src="images/tarangire.jpg" alt="Tarangire National Park">
+                </div>
+                <div class="item-content">
+                    <h3>Tarangire National Park</h3>
+                    <p>Discover Tanzania's hidden gem, known for its large elephant herds and baobab trees.</p>
+                    <div class="item-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Tanzania</span>
+                    <span><i class="fas fa-clock"></i> 4-7 days</span>
+                    </div>
+                    <a href="tarangire.html" class="btn link">Explore <i class="fas fa-chevron-right"></i></a>
+                </div>
+                </article>
+
+                <!-- Destination Item 5 -->
+                <article class="destination-item" data-region="africa" data-type="beach">
+                <div class="item-image">
+                    <img src="images/zanzibar.jpg" alt="Zanzibar Beaches">
+                </div>
+                <div class="item-content">
+                    <h3>Zanzibar Beaches</h3>
+                    <p>Relax on pristine white sands and enjoy the turquoise waters of the Indian Ocean.</p>
+                    <div class="item-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Tanzania</span>
+                    <span><i class="fas fa-clock"></i> 3-6 days</span>
+                    </div>
+                    <a href="zanzibar.html" class="btn link">Explore <i class="fas fa-chevron-right"></i></a>
+                </div>
+                </article>
+            </div>
+
+            <div class="pagination">
+                <button class="btn outline disabled"><i class="fas fa-chevron-left"></i> Previous</button>
+                <div class="page-numbers">
+                <span class="active">1</span>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <span>...</span>
+                <a href="#">8</a>
+                </div>
+                <button class="btn outline">Next <i class="fas fa-chevron-right"></i></button>
+            </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="why-choose-us">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why Choose Our Eco Destinations</h2>
+                </div>
+                <div class="reasons-grid">
+                    <div class="reason-card">
+                        <div class="reason-icon">
+                            <i class="fas fa-globe-europe"></i>
+                        </div>
+                        <h3>Carbon Conscious</h3>
+                        <p>All our trips are carbon-assessed with options to offset your footprint.</p>
+                    </div>
+                    <div class="reason-card">
+                        <div class="reason-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Community First</h3>
+                        <p>We ensure at least 80% of your trip cost benefits local communities.</p>
+                    </div>
+                    <div class="reason-card">
+                        <div class="reason-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Ethical Wildlife</h3>
+                        <p>All animal encounters follow strict ethical guidelines.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="minimal-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/Artboard 3 (1).png" alt="Teva Eco Travel" class="footer-logo">
+                    <p class="footer-tagline">Sustainable Travel Experiences</p>
+                </div>
+                
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Teva Eco Travel. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <span>•</span>
+                    <a href="terms.html">Terms</a>
+                    <span>•</span>
+                    <span>Website by Adams Visuals Ltd</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/destinations.js"></script>
+    <script src="js/destination-hero.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
