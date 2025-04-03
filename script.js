@@ -10,23 +10,53 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Mobile Menu Toggle
-    const hamburger = document.querySelector('.hamburger');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    
-    hamburger.addEventListener('click', function() {
-        this.classList.toggle('active');
-        mobileMenu.classList.toggle('active');
-    });
-
-    // Close mobile menu when clicking on a link
-    const mobileLinks = document.querySelectorAll('.mobile-menu a');
-    mobileLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            hamburger.classList.remove('active');
-            mobileMenu.classList.remove('active');
-        });
-    });
+// Mobile Menu Functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.hamburger');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+  
+  // Toggle mobile menu
+  hamburger.addEventListener('click', function() {
+      this.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+      document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+  });
+  
+  // Toggle dropdowns
+  dropdownToggles.forEach(toggle => {
+      toggle.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const parent = this.closest('.mobile-dropdown');
+          parent.classList.toggle('active');
+          
+          // Close other open dropdowns
+          document.querySelectorAll('.mobile-dropdown').forEach(dropdown => {
+              if (dropdown !== parent) {
+                  dropdown.classList.remove('active');
+              }
+          });
+      });
+  });
+  
+  // Close menu when clicking a link (except dropdown toggles)
+  mobileMenu.addEventListener('click', function(e) {
+      if (e.target.tagName === 'A' && !e.target.closest('.mobile-dropdown')) {
+          hamburger.classList.remove('active');
+          mobileMenu.classList.remove('active');
+          document.body.style.overflow = '';
+      }
+  });
+  
+  // Close menu when clicking outside
+  document.addEventListener('click', function(e) {
+      if (!mobileMenu.contains(e.target) && !hamburger.contains(e.target)) {
+          hamburger.classList.remove('active');
+          mobileMenu.classList.remove('active');
+          document.body.style.overflow = '';
+      }
+  });
+});
 
     // Hero Slider Functionality
     const slides = document.querySelectorAll('.slide');
