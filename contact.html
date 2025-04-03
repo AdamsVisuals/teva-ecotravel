@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teva Eco Travel - Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="./favicon_io" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon_io" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <ul class="nav-links left-links">
+                    <li class="dropdown">
+                        <a href="#">Destinations <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#">Serengeti National Park</a></li>
+                                <li><a href="#">Tarangire National Park</a></li>
+                                <li><a href="#">Ngorongoro Conservation Area</a></li>
+                                <li><a href="#">Lake Manyara National Park</a></li>
+                                <li><a href="#">Arusha National Park</a></li>
+                                <li><a href="#">Znzibar Beaches</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Experiences <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#">Bush Walks</a></li>
+                                <li><a href="#">Cultural Experiences</a></li>
+                                <li><a href="#">Zanzibar Holidays</a></li>
+                                <li><a href="#">Family Friendly</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/Artboard 3 (1).png" alt="Teva Eco Travel">
+                    </a>
+                </div>
+                
+                <ul class="nav-links right-links">
+                    <li><a href="#about-section">About Us</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+                
+                <div class="nav-buttons">
+                    <a href="contact.html" class="btn secondary">Contact</a>
+                    <a href="booking.html" class="btn primary">Book Now</a>
+                </div>
+                
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <ul>
+                <li class="mobile-dropdown">
+                    <a href="destinations.html">Destinations <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">African Safaris</a></li>
+                        <li><a href="#">Asian Adventures</a></li>
+                        <li><a href="#">European Eco-Tours</a></li>
+                        <li><a href="#">South American Treks</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-dropdown">
+                    <a href="experience.html">Experiences <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">Wildlife Watching</a></li>
+                        <li><a href="#">Cultural Immersion</a></li>
+                        <li><a href="#">Eco-Lodges</a></li>
+                        <li><a href="#">Adventure Travel</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html" class="btn primary">Book Now</a></li>
+            </ul>
+        </div>
+    </header>
+
+<!-- Full-Screen Contact Hero -->
+<section class="contact-hero-fullscreen">
+    <!-- Background Image with Overlay -->
+    <div class="hero-background" style="background-image: url('images/image2.JPG');"></div>
+    
+    <!-- Hero Content -->
+    <div class="hero-content">
+        <div class="container">
+            <h1>Start Your <span>Sustainable</span> Journey</h1>
+            <p class="subtitle">Our eco-travel experts are ready to craft your perfect adventure</p>
+            
+            <!-- Animated Scroll Indicator -->
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Main Section -->
+    <main class="contact-main">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Send Us a Message</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">Trip Interest</label>
+                            <select id="interest" name="interest">
+                                <option value="">Select an option</option>
+                                <option value="africa">African Safaris</option>
+                                <option value="asia">Asian Adventures</option>
+                                <option value="europe">European Eco-Tours</option>
+                                <option value="americas">Americas Exploration</option>
+                                <option value="custom">Custom Itinerary</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-section">
+                    <div class="contact-info-card">
+                        <h3>Contact Information</h3>
+                        <p>Have questions about sustainable travel? Reach out through any of these channels:</p>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <a href="tel:+18005553251">+1 (800) 555-3251</a>
+                                <p>Monday-Friday: 9am-6pm EST</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:info@tevaecotravel.com">info@tevaecotravel.com</a>
+                                <p>Response within 24 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Office</h4>
+                                <address>
+                                    123 Sustainability Way<br>
+                                    Portland, OR 97204<br>
+                                    United States
+                                </address>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <h4>Follow Us</h4>
+                            <div class="social-icons">
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Map Section -->
+    <section class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.123456789012!2d36.6829923!3d-3.3869254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18371c1234567890%3A0xabcdef1234567890!2sArusha%2C%20Tanzania!5e0!3m2!1sen!2sus!4v1689874567890!5m2!1sen!2sus" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How soon will I receive a response to my inquiry?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our team typically responds within 24 hours during business days. For urgent requests, please call our office directly.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you offer custom eco-tourism itineraries?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We specialize in creating personalized sustainable travel experiences. Mention your preferences in the message field, and our experts will design a trip tailored to your interests.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What makes your tours eco-friendly?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>All our tours feature carbon-neutral transportation, eco-certified accommodations, and partnerships with local conservation initiatives. We ensure at least 80% of your trip cost directly benefits local communities.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What's your cancellation policy?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer flexible cancellation with full refunds up to 60 days before departure. Between 30-60 days, we provide a 50% refund or 100% credit toward future travel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="minimal-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/Artboard 3 (1).png" alt="Teva Eco Travel" class="footer-logo">
+                    <p class="footer-tagline">Sustainable Travel Experiences</p>
+                </div>
+                
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Teva Eco Travel. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <span>•</span>
+                    <a href="terms.html">Terms</a>
+                    <span>•</span>
+                    <span>Website by Adams Visuals Ltd</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/contact.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
