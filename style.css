@@ -829,3 +829,152 @@ header.scrolled .hamburger span {
         gap: 10px;
     }
 }
+
+/* Expert Advice Section */
+.expert-advice-section {
+    padding: 100px 0;
+    background-color: var(--cream);
+    position: relative;
+}
+
+.expert-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.image-content {
+    flex: 1;
+}
+
+.section-badge {
+    display: inline-block;
+    background-color: var(--sage-green);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.expert-advice-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--moss-green);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.expert-advice-section p {
+    color: var(--dark-text);
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.benefit-item i {
+    color: var(--moss-green);
+    font-size: 1.2rem;
+}
+
+.benefit-item span {
+    color: var(--dark-text);
+    font-size: 0.95rem;
+}
+
+.image-wrapper {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.experience-badge .years {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--moss-green);
+    line-height: 1;
+}
+
+.experience-badge .label {
+    font-size: 0.8rem;
+    color: var(--dark-text);
+}
+
+.btn.with-icon i {
+    transition: transform 0.3s ease;
+}
+
+.btn.with-icon:hover i {
+    transform: translateX(5px);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .expert-content {
+        flex-direction: column;
+    }
+    
+    .text-content {
+        max-width: 100%;
+        order: 2;
+    }
+    
+    .image-content {
+        order: 1;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .expert-advice-section h2 {
+        font-size: 2rem;
+    }
+    
+    .expert-advice-section {
+        padding: 70px 0;
+    }
+}
