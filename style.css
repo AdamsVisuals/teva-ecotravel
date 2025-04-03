@@ -677,3 +677,155 @@ header.scrolled .hamburger span {
         min-width: 200px;
     }
 }
+
+/* Destinations Section Styles */
+.destinations-section {
+    padding: 80px 0;
+    background-color: var(--cream);
+}
+
+.section-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+.section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--moss-green);
+    margin-bottom: 15px;
+}
+
+.section-header .subtitle {
+    font-size: 1.1rem;
+    color: var(--sage-green);
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.destination-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.card-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.destination-card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+.eco-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--moss-green);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    font-size: 1.4rem;
+    color: var(--moss-green);
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    color: var(--dark-text);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: var(--sage-green);
+}
+
+.card-details i {
+    margin-right: 5px;
+}
+
+.btn.outline {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid var(--moss-green);
+    color: var(--moss-green);
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+.btn.outline:hover {
+    background-color: var(--moss-green);
+    color: white;
+}
+
+.section-footer {
+    text-align: center;
+}
+
+.btn.with-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .destinations-section {
+        padding: 60px 0;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .destinations-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-details {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
