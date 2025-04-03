@@ -89,3 +89,44 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Image Gallery Auto-Scroll
+function setupGalleryAutoScroll() {
+    const gallery = document.querySelector('.image-gallery');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const galleryWidth = gallery.scrollWidth;
+    let scrollAmount = 0;
+    let autoScrollInterval;
+
+    function autoScroll() {
+        scrollAmount += 1;
+        if (scrollAmount >= galleryWidth - gallery.clientWidth) {
+            scrollAmount = 0;
+            gallery.scrollTo({ left: 0, behavior: 'instant' });
+        } else {
+            gallery.scrollLeft = scrollAmount;
+        }
+    }
+
+    function startAutoScroll() {
+        autoScrollInterval = setInterval(autoScroll, 30);
+    }
+
+    function pauseAutoScroll() {
+        clearInterval(autoScrollInterval);
+    }
+
+    // Pause on hover
+    gallery.addEventListener('mouseenter', pauseAutoScroll);
+    gallery.addEventListener('mouseleave', startAutoScroll);
+
+    // Start auto-scroll
+    startAutoScroll();
+}
+
+// Initialize when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // ... your existing code ...
+    
+    setupGalleryAutoScroll();
+});
