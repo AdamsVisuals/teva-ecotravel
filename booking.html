@@ -95,288 +95,106 @@
             </ul>
         </div>
     </header>
-
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Your Eco Adventure | Teva Eco Travel</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <!-- Booking Hero -->
-    <section class="booking-hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Book Your <span>Sustainable</span> Journey</h1>
-                <p>Secure your spot on an eco-friendly adventure that gives back to local communities</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Booking Process Indicator -->
-    <div class="booking-steps">
-        <div class="container">
-            <div class="steps-container">
-                <div class="step active" data-step="1">
-                    <div class="step-number">1</div>
-                    <div class="step-label">Trip Selection</div>
-                </div>
-                <div class="step" data-step="2">
-                    <div class="step-number">2</div>
-                    <div class="step-label">Traveler Details</div>
-                </div>
-                <div class="step" data-step="3">
-                    <div class="step-number">3</div>
-                    <div class="step-label">Payment</div>
-                </div>
-                <div class="step" data-step="4">
-                    <div class="step-number">4</div>
-                    <div class="step-label">Confirmation</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Main Booking Form -->
-    <main class="booking-main">
-        <div class="container">
-            <form id="booking-form" class="booking-form">
-                <!-- Step 1: Trip Selection -->
-                <div class="form-step active" data-step="1">
-                    <h2>Select Your Eco Adventure</h2>
-                    
-                    <div class="trip-options">
-                        <div class="trip-card selected">
-                            <div class="trip-image" style="background-image: url('images/kenya-safari.jpg');">
-                                <div class="eco-badge">Carbon Neutral</div>
-                            </div>
-                            <div class="trip-details">
-                                <h3>Kenyan Wildlife Safari</h3>
-                                <div class="trip-meta">
-                                    <span><i class="fas fa-calendar-alt"></i> 10 days</span>
-                                    <span><i class="fas fa-map-marker-alt"></i> Maasai Mara, Kenya</span>
-                                </div>
-                                <p>Experience the Great Migration while supporting local conservation efforts at solar-powered eco-lodges.</p>
-                                <div class="trip-price">
-                                    <span class="price">$2,850</span>
-                                    <span class="per-person">per person</span>
-                                </div>
-                                <button type="button" class="btn outline select-trip">Select This Trip</button>
-                            </div>
-                        </div>
-                        
-                        <div class="trip-card">
-                            <div class="trip-image" style="background-image: url('images/costa-rica-eco.jpg');">
-                                <div class="eco-badge">Community-Based</div>
-                            </div>
-                            <div class="trip-details">
-                                <h3>Costa Rica Rainforest Retreat</h3>
-                                <div class="trip-meta">
-                                    <span><i class="fas fa-calendar-alt"></i> 8 days</span>
-                                    <span><i class="fas fa-map-marker-alt"></i> Monteverde, Costa Rica</span>
-                                </div>
-                                <p>Immerse yourself in biodiversity hotspots with indigenous guides and stay at award-winning eco-lodges.</p>
-                                <div class="trip-price">
-                                    <span class="price">$2,150</span>
-                                    <span class="per-person">per person</span>
-                                </div>
-                                <button type="button" class="btn outline select-trip">Select This Trip</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="form-navigation">
-                        <button type="button" class="btn primary next-step">Continue to Traveler Details <i class="fas fa-arrow-right"></i></button>
+    
+        <main>
+            <section class="booking-hero">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>Begin Your <span>Eco Journey</span></h1>
+                    <p>Immerse yourself in nature with our sustainable travel experiences</p>
+                    <div class="scroll-indicator">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 5v14M19 12l-7 7-7-7"/>
+                        </svg>
                     </div>
                 </div>
-                
-                <!-- Step 2: Traveler Details -->
-                <div class="form-step" data-step="2">
-                    <h2>Traveler Information</h2>
-                    
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <label for="full-name">Full Name*</label>
-                            <input type="text" id="full-name" name="full-name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email Address*</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Phone Number*</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="country">Country of Residence*</label>
-                            <select id="country" name="country" required>
-                                <option value="">Select Country</option>
-                                <option value="US">United States</option>
-                                <option value="CA">Canada</option>
-                                <option value="UK">United Kingdom</option>
-                                <!-- More countries would be added here -->
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="travelers">Number of Travelers*</label>
-                            <select id="travelers" name="travelers" required>
-                                <option value="">Select</option>
-                                <option value="1">1 Traveler</option>
-                                <option value="2">2 Travelers</option>
-                                <option value="3">3 Travelers</option>
-                                <option value="4">4 Travelers</option>
-                                <option value="4+">4+ Travelers (Group)</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="dates">Preferred Travel Dates*</label>
-                            <input type="text" id="dates" name="dates" placeholder="Select date range" required>
-                        </div>
-                        
-                        <div class="form-group full-width">
-                            <label for="special-requests">Special Requests</label>
-                            <textarea id="special-requests" name="special-requests" rows="4" placeholder="Dietary restrictions, accessibility needs, etc."></textarea>
-                        </div>
+            </section>
+    
+            <section class="booking-form-section">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h2>Reservation Request</h2>
+                        <p>Complete this form and our team will contact you within 24 hours to confirm your booking</p>
                     </div>
                     
-                    <div class="form-navigation">
-                        <button type="button" class="btn secondary prev-step"><i class="fas fa-arrow-left"></i> Back</button>
-                        <button type="button" class="btn primary next-step">Continue to Payment <i class="fas fa-arrow-right"></i></button>
-                    </div>
-                </div>
-                
-                <!-- Step 3: Payment -->
-                <div class="form-step" data-step="3">
-                    <h2>Payment Information</h2>
-                    
-                    <div class="payment-container">
-                        <div class="payment-summary">
-                            <h3>Your Trip Summary</h3>
-                            <div class="summary-item">
-                                <span class="label">Kenyan Wildlife Safari</span>
-                                <span class="value">$2,850</span>
-                            </div>
-                            <div class="summary-item">
-                                <span class="label">2 Travelers</span>
-                                <span class="value">$5,700</span>
-                            </div>
-                            <div class="summary-item">
-                                <span class="label">Sustainable Tourism Fee</span>
-                                <span class="value">$120</span>
-                            </div>
-                            <div class="summary-item total">
-                                <span class="label">Total Amount</span>
-                                <span class="value">$5,820</span>
+                    <form id="booking-form" action="mailto:bookings@tevaecotravel.com" method="post" enctype="text/plain">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your full name" required>
+                                <div class="input-decoration"></div>
                             </div>
                             
-                            <div class="eco-benefits">
-                                <h4>Your Booking Supports:</h4>
-                                <ul>
-                                    <li><i class="fas fa-check"></i> Wildlife conservation projects</li>
-                                    <li><i class="fas fa-check"></i> Local community initiatives</li>
-                                    <li><i class="fas fa-check"></i> Carbon offset programs</li>
-                                </ul>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                                <div class="input-decoration"></div>
                             </div>
-                        </div>
-                        
-                        <div class="payment-form">
-                            <div class="payment-methods">
-                                <div class="method active" data-method="credit">
-                                    <i class="fab fa-cc-visa"></i>
-                                    <i class="fab fa-cc-mastercard"></i>
-                                    <i class="fab fa-cc-amex"></i>
-                                    <span>Credit Card</span>
-                                </div>
-                                <div class="method" data-method="paypal">
-                                    <i class="fab fa-cc-paypal"></i>
-                                    <span>PayPal</span>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+1 (___) ___-____">
+                                <div class="input-decoration"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="trip">Experience Type</label>
+                                <div class="select-wrapper">
+                                    <select id="trip" name="trip" required>
+                                        <option value="">Select your adventure</option>
+                                        <option value="forest-retreat">Forest Eco Retreat</option>
+                                        <option value="coastal-explorer">Coastal Explorer</option>
+                                        <option value="mountain-trek">Mountain Trek</option>
+                                        <option value="cultural-immersion">Cultural Immersion</option>
+                                        <option value="custom-tour">Custom Experience</option>
+                                    </select>
+                                    <div class="select-arrow"></div>
                                 </div>
                             </div>
                             
-                            <div class="credit-card-form">
-                                <div class="form-group">
-                                    <label for="card-number">Card Number*</label>
-                                    <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="card-name">Name on Card*</label>
-                                    <input type="text" id="card-name" name="card-name" required>
-                                </div>
-                                
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <label for="expiry">Expiry Date*</label>
-                                        <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                            <div class="form-group date-group">
+                                <label>Travel Dates</label>
+                                <div class="date-inputs">
+                                    <div class="date-input">
+                                        <span>From</span>
+                                        <input type="date" id="start-date" name="start-date" required>
                                     </div>
-                                    
-                                    <div class="form-group">
-                                        <label for="cvv">CVV*</label>
-                                        <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                                    <div class="date-input">
+                                        <span>To</span>
+                                        <input type="date" id="end-date" name="end-date" required>
                                     </div>
                                 </div>
-                                
-                                <div class="form-group">
-                                    <input type="checkbox" id="save-card" name="save-card">
-                                    <label for="save-card">Save card for future payments</label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="guests">Travelers</label>
+                                <div class="guests-selector">
+                                    <button type="button" class="guest-btn minus">-</button>
+                                    <input type="number" id="guests" name="guests" value="1" min="1" max="20" readonly>
+                                    <button type="button" class="guest-btn plus">+</button>
                                 </div>
                             </div>
                             
-                            <div class="paypal-form" style="display: none;">
-                                <p>You'll be redirected to PayPal to complete your payment securely.</p>
-                                <button type="button" class="btn primary"><i class="fab fa-cc-paypal"></i> Continue with PayPal</button>
-                            </div>
-                            
-                            <div class="form-group terms">
-                                <input type="checkbox" id="terms" name="terms" required>
-                                <label for="terms">I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Cancellation Policy</a>*</label>
+                            <div class="form-group full-width">
+                                <label for="special-requests">Special Requests</label>
+                                <textarea id="special-requests" name="special-requests" rows="4" placeholder="Dietary restrictions, accessibility needs, or special preferences"></textarea>
+                                <div class="textarea-decoration"></div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="form-navigation">
-                        <button type="button" class="btn secondary prev-step"><i class="fas fa-arrow-left"></i> Back</button>
-                        <button type="submit" class="btn primary">Complete Booking</button>
-                    </div>
-                </div>
-                
-                <!-- Step 4: Confirmation (shown after submission) -->
-                <div class="form-step" data-step="4">
-                    <div class="confirmation-container">
-                        <div class="confirmation-icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <h2>Your Booking is Confirmed!</h2>
-                        <p class="confirmation-number">Booking Reference: <strong>TEVA-2023-5874</strong></p>
-                        <p>Thank you for choosing sustainable travel. We've sent all the details to <strong>your@email.com</strong>.</p>
                         
-                        <div class="confirmation-details">
-                            <h3>What's Next?</h3>
-                            <ul>
-                                <li><i class="fas fa-envelope"></i> You'll receive a detailed itinerary within 24 hours</li>
-                                <li><i class="fas fa-file-alt"></i> Our sustainability guide will be emailed to you</li>
-                                <li><i class="fas fa-headset"></i> Dedicated trip coordinator will contact you</li>
-                            </ul>
+                        <div class="form-footer">
+                            <button type="submit" class="submit-btn">
+                                <span>Submit Request</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                            <p class="form-note">We respect your privacy. Your information will never be shared.</p>
                         </div>
-                        
-                        <div class="confirmation-actions">
-                            <a href="#" class="btn primary"><i class="fas fa-file-pdf"></i> Download Itinerary</a>
-                            <a href="#" class="btn secondary"><i class="fas fa-calendar-alt"></i> Add to Calendar</a>
-                        </div>
-                    </div>
+                    </form>
                 </div>
-            </form>
-        </div>
-    </main>
+            </section>
+        </main>
 
     <footer class="minimal-footer">
         <div class="container">
