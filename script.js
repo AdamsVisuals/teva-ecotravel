@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Header scroll effect
+    // Header Scroll Effect
     const header = document.getElementById('main-header');
     
     window.addEventListener('scroll', function() {
@@ -10,46 +10,82 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Video slideshow functionality
-    const videos = document.querySelectorAll('.video-slideshow video');
-    const dots = document.querySelectorAll('.dot');
-    let currentSlide = 0;
+    // Mobile Menu Toggle
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu');
     
-    function showSlide(n) {
-        // Hide all videos
-        videos.forEach(video => {
-            video.classList.remove('active');
-        });
-        
-        // Remove active class from all dots
-        dots.forEach(dot => {
-            dot.classList.remove('active');
-        });
-        
-        // Update current slide index
-        currentSlide = (n + videos.length) % videos.length;
-        
-        // Show current video and activate corresponding dot
-        videos[currentSlide].classList.add('active');
-        dots[currentSlide].classList.add('active');
-    }
-    
-    // Dot click event listeners
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => {
-            showSlide(index);
+    hamburger.addEventListener('click', function() {
+        this.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking on a link
+    const mobileLinks = document.querySelectorAll('.mobile-menu a');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            mobileMenu.classList.remove('active');
         });
     });
-    
-    // Auto slide change every 5 seconds
-    setInterval(() => {
-        showSlide(currentSlide + 1);
-    }, 5000);
-    
-    // Mobile menu toggle (to be implemented)
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    mobileMenuBtn.addEventListener('click', function() {
-        // This would toggle a mobile menu - implementation depends on your design
-        console.log('Mobile menu clicked - implement functionality here');
+
+    // Hero Slider Functionality
+    const slides = document.querySelectorAll('.slide');
+    const dotsContainer = document.querySelector('.slider-dots');
+    const prevBtn = document.querySelector('.prev-slide');
+    const nextBtn = document.querySelector('.next-slide');
+    let currentSlide = 0;
+
+    // Create dots
+    slides.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        if (index === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => goToSlide(index));
+        dotsContainer.appendChild(dot);
+    });
+
+    const dots = document.querySelectorAll('.dot');
+
+    function goToSlide(slideIndex) {
+        slides[currentSlide].classList.remove('active');
+        dots[currentSlide].classList.remove('active');
+        
+        currentSlide = (slideIndex + slides.length) % slides.length;
+        
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+        goToSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+        goToSlide(currentSlide - 1);
+    }
+
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+
+    // Auto slide change
+    let slideInterval = setInterval(nextSlide, 5000);
+
+    // Pause on hover
+    const heroSlider = document.querySelector('.hero-slider');
+    heroSlider.addEventListener('mouseenter', () => {
+        clearInterval(slideInterval);
+    });
+
+    heroSlider.addEventListener('mouseleave', () => {
+        slideInterval = setInterval(nextSlide, 5000);
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowRight') {
+            nextSlide();
+        } else if (e.key === 'ArrowLeft') {
+            prevSlide();
+        }
     });
 });
