@@ -54,6 +54,7 @@ header.scrolled {
 .logo img {
     height: 50px;
     transition: all 0.3s ease;
+    margin-left: 40px;
 }
 
 header.scrolled .logo img {
@@ -64,6 +65,14 @@ header.scrolled .logo img {
     display: flex;
     list-style: none;
     gap: 30px;
+}
+
+.left-links {
+    margin-right: 150px; /* Space for logo */
+}
+
+.right-links {
+    margin-left: 150px; /* Space for logo */
 }
 
 .nav-links a {
@@ -97,6 +106,11 @@ header.scrolled .nav-links a {
 .nav-buttons {
     display: flex;
     gap: 15px;
+    margin-left: 30px;
+}
+
+.nav-links.left-links{
+    margin-right: 120px;
 }
 
 .btn {
