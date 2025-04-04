@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teva Eco Travel - Serengeti Safaris</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="./favicon_io" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon_io" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="styles/serengeti.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <ul class="nav-links left-links">
+                    <li class="dropdown">
+                        <a href="#">Destinations <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#">Serengeti National Park</a></li>
+                                <li><a href="#">Tarangire National Park</a></li>
+                                <li><a href="#">Ngorongoro Conservation Area</a></li>
+                                <li><a href="#">Lake Manyara National Park</a></li>
+                                <li><a href="#">Arusha National Park</a></li>
+                                <li><a href="#">Znzibar Beaches</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Experiences <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#">Bush Walks</a></li>
+                                <li><a href="#">Cultural Experiences</a></li>
+                                <li><a href="#">Zanzibar Holidays</a></li>
+                                <li><a href="#">Family Friendly</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/Artboard 3 (1).png" alt="Teva Eco Travel">
+                    </a>
+                </div>
+                
+                <ul class="nav-links right-links">
+                    <li><a href="#about-section">About Us</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+                
+                <div class="nav-buttons">
+                    <a href="contact.html" class="btn secondary">Contact</a>
+                    <a href="booking.html" class="btn primary">Book Now</a>
+                </div>
+                
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <ul>
+                <li class="mobile-dropdown">
+                    <a href="destinations.html">Destinations <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">African Safaris</a></li>
+                        <li><a href="#">Asian Adventures</a></li>
+                        <li><a href="#">European Eco-Tours</a></li>
+                        <li><a href="#">South American Treks</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-dropdown">
+                    <a href="experience.html">Experiences <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">Wildlife Watching</a></li>
+                        <li><a href="#">Cultural Immersion</a></li>
+                        <li><a href="#">Eco-Lodges</a></li>
+                        <li><a href="#">Adventure Travel</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html" class="btn primary">Book Now</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="serengeti-hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Serengeti <span>Eco Safaris</span></h1>
+                <p>Witness the Great Migration with minimal environmental impact</p>
+                <a href="#safaris" class="explore-btn">
+                    <span>Explore Safaris</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="season-indicator">
+                <div class="season active" data-season="great-migration">
+                    <span>Great Migration</span>
+                    <small>June - October</small>
+                </div>
+                <div class="season" data-season="calving-season">
+                    <span>Calving Season</span>
+                    <small>January - March</small>
+                </div>
+                <div class="season" data-season="green-season">
+                    <span>Green Season</span>
+                    <small>November - May</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conservation Section -->
+        <section class="conservation-section">
+            <div class="container">
+                <div class="conservation-content">
+                    <h2>Conservation-First Safaris</h2>
+                    <p class="intro-text">Our eco-safaris directly contribute to protecting the Serengeti ecosystem through:</p>
+                    
+                    <div class="conservation-grid">
+                        <div class="conservation-card">
+                            <div class="card-icon">
+                                <i class="fas fa-paw"></i>
+                            </div>
+                            <h3>Anti-Poaching Support</h3>
+                            <p>15% of all safari revenue funds ranger patrols and wildlife monitoring programs</p>
+                        </div>
+                        
+                        <div class="conservation-card">
+                            <div class="card-icon">
+                                <i class="fas fa-solar-panel"></i>
+                            </div>
+                            <h3>Solar-Powered Camps</h3>
+                            <p>All our partner lodges use renewable energy and water recycling systems</p>
+                        </div>
+                        
+                        <div class="conservation-card">
+                            <div class="card-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Community Employment</h3>
+                            <p>90% of camp staff are from local Maasai communities</p>
+                        </div>
+                    </div>
+                    
+                    <div class="conservation-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Plastic-Free Operations</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">250+</span>
+                            <span class="stat-label">Wildlife Species Protected</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1M+</span>
+                            <span class="stat-label">Acres Conserved</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Safari Packages -->
+        <section id="safaris" class="safari-packages">
+            <div class="container">
+                <h2>Eco Safari Packages</h2>
+                <p class="section-subtitle">Choose your sustainable Serengeti adventure</p>
+                
+                <div class="package-tabs">
+                    <div class="tab active" data-tab="classic">Classic Safaris</div>
+                    <div class="tab" data-tab="luxury">Luxury Eco</div>
+                    <div class="tab" data-tab="photography">Photography</div>
+                </div>
+                
+                <div class="package-content active" data-tab-content="classic">
+                    <div class="package-card">
+                        <div class="package-image" style="background-image: url('https://images.unsplash.com/photo-1523805009345-7448845a9e53?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+                            <div class="package-badge">Best Value</div>
+                        </div>
+                        <div class="package-details">
+                            <h3>5-Day Classic Migration</h3>
+                            <div class="package-highlights">
+                                <div class="highlight">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>June - October</span>
+                                </div>
+                                <div class="highlight">
+                                    <i class="fas fa-user-friends"></i>
+                                    <span>Small Groups (6 max)</span>
+                                </div>
+                                <div class="highlight">
+                                    <i class="fas fa-bed"></i>
+                                    <span>Tented Camps</span>
+                                </div>
+                            </div>
+                            <p>Follow the wildebeest migration with expert guides, staying in mobile eco-camps that leave no trace.</p>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> 2 daily game drives in biofuel vehicles</li>
+                                <li><i class="fas fa-check"></i> All meals with locally-sourced ingredients</li>
+                                <li><i class="fas fa-check"></i> Conservation fees included</li>
+                            </ul>
+                            <div class="package-footer">
+                                <span class="package-price">From $2,800/person</span>
+                                <a href="booking.html" class="package-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="package-content" data-tab-content="luxury">
+                    <div class="package-card">
+                        <div class="package-image" style="background-image: url('images/cultural-immersion.jpg')">
+                            <div class="package-badge">Luxury</div>
+                        </div>
+                        <div class="package-details">
+                            <h3>7-Day Luxury Eco Safari</h3>
+                            <div class="package-highlights">
+                                <div class="highlight">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Year-Round</span>
+                                </div>
+                                <div class="highlight">
+                                    <i class="fas fa-user-friends"></i>
+                                    <span>Private Groups</span>
+                                </div>
+                                <div class="highlight">
+                                    <i class="fas fa-bed"></i>
+                                    <span>Solar-Powered Lodges</span>
+                                </div>
+                            </div>
+                            <p>Experience the Serengeti in sustainable luxury at award-winning eco-lodges with minimal environmental impact.</p>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> Private game drives with expert guides</li>
+                                <li><i class="fas fa-check"></i> Gourmet farm-to-table dining</li>
+                                <li><i class="fas fa-check"></i> Spa with organic products</li>
+                            </ul>
+                            <div class="package-footer">
+                                <span class="package-price">From $5,200/person</span>
+                                <a href="booking.html" class="package-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="package-content" data-tab-content="photography">
+                    <div class="package-card">
+                        <div class="package-image" style="background-image: url('images/travel.JPG')">
+                            <div class="package-badge">Photography</div>
+                        </div>
+                        <div class="package-details">
+                            <h3>10-Day Photography Safari</h3>
+                            <div class="package-highlights">
+                                <div class="highlight">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>January - March</span>
+                                </div>
+                                <div class="highlight">
+                                    <i class="fas fa-user-friends"></i>
+                                    <span>4 Guests Max</span>
+                                </div>
+                                <div class="highlight">
+                                    <i class="fas fa-bed"></i>
+                                    <span>Specialty Camps</span>
+                                </div>
+                            </div>
+                            <p>Capture stunning wildlife images with professional photographer guides while supporting conservation efforts.</p>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> Custom photography vehicle with mounts</li>
+                                <li><i class="fas fa-check"></i> Post-processing workshops</li>
+                                <li><i class="fas fa-check"></i> Exclusive access locations</li>
+                            </ul>
+                            <div class="package-footer">
+                                <span class="package-price">From $6,500/person</span>
+                                <a href="booking.html" class="package-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wildlife Section -->
+        <section class="wildlife-section">
+            <div class="container">
+                <h2>Wildlife You May Encounter</h2>
+                <p class="section-subtitle">The Serengeti is home to Africa's most iconic species</p>
+                
+                <div class="wildlife-grid">
+                    <div class="wildlife-card">
+                        <div class="wildlife-image" style="background-image: url('images/leopard.JPG')"></div>
+                        <div class="wildlife-info">
+                            <h3>Big Cats</h3>
+                            <p>Lions, leopards, and cheetahs thrive in the Serengeti's vast plains.</p>
+                            <span class="wildlife-season">Best seen: Year-round</span>
+                        </div>
+                    </div>
+                    
+                    <div class="wildlife-card">
+                        <div class="wildlife-image" style="background-image: url('images/great-migration.jpg')"></div>
+                        <div class="wildlife-info">
+                            <h3>Great Migration</h3>
+                            <p>Over 1.5 million wildebeest and zebras complete this annual cycle.</p>
+                            <span class="wildlife-season">Peak: June - October</span>
+                        </div>
+                    </div>
+                    
+                    <div class="wildlife-card">
+                        <div class="wildlife-image" style="background-image: url('images/serengeti1.jpg')"></div>
+                        <div class="wildlife-info">
+                            <h3>Elephants</h3>
+                            <p>Herds of African elephants roam the northern woodlands.</p>
+                            <span class="wildlife-season">Best seen: Dry season</span>
+                        </div>
+                    </div>
+                    
+                    <div class="wildlife-card">
+                        <div class="wildlife-image" style="background-image: url('images/birds.jpg')"></div>
+                        <div class="wildlife-info">
+                            <h3>Birdlife</h3>
+                            <p>Over 500 bird species including ostriches and vultures.</p>
+                            <span class="wildlife-season">Peak: November - April</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonial-section">
+            <div class="container">
+                <h2>Traveler Experiences</h2>
+                <p class="section-subtitle">What our guests say about our Serengeti safaris</p>
+                
+                <div class="testimonial-slider">
+                    <div class="testimonial active">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <blockquote>
+                                "The eco-conscious approach made our safari even more meaningful. Seeing how our visit directly supported conservation efforts was incredible."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-image" style="background-image: url('https://randomuser.me/api/portraits/women/44.jpg')"></div>
+                                <div class="author-info">
+                                    <span class="author-name">Sarah Johnson</span>
+                                    <span class="author-location">Portland, Oregon</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <blockquote>
+                                "Our guide's knowledge of animal behavior and conservation was outstanding. The solar-powered camp was more luxurious than we imagined possible!"
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-image" style="background-image: url('https://randomuser.me/api/portraits/men/32.jpg')"></div>
+                                <div class="author-info">
+                                    <span class="author-name">Michael Chen</span>
+                                    <span class="author-location">Toronto, Canada</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <blockquote>
+                                "Witnessing the migration from our low-impact mobile camp was the experience of a lifetime. Teva's commitment to sustainability is genuine and impressive."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-image" style="background-image: url('https://randomuser.me/api/portraits/women/68.jpg')"></div>
+                                <div class="author-info">
+                                    <span class="author-name">Emma Rodriguez</span>
+                                    <span class="author-location">Barcelona, Spain</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slider-controls">
+                        <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                        <div class="slider-dots"></div>
+                        <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking CTA -->
+        <section class="serengeti-cta">
+            <div class="container">
+                <div class="cta-card">
+                    <h2>Ready for Your Eco Safari?</h2>
+                    <p>Our safari experts will create a personalized itinerary that matches your travel style while maximizing conservation impact.</p>
+                    <div class="cta-buttons">
+                        <a href="booking.html" class="cta-btn primary">
+                            <span>Book Your Safari</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="cta-btn secondary">
+                            <span>Ask a Question</span>
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<footer class="minimal-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="images/Artboard 3 (1).png" alt="Teva Eco Travel" class="footer-logo">
+                <p class="footer-tagline">Sustainable Travel Experiences</p>
+            </div>
+            
+            <div class="footer-links">
+                <ul>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Teva Eco Travel. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <span>•</span>
+                <a href="terms.html">Terms</a>
+                <span>•</span>
+                <span>Website by Adams Visuals Ltd</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/serengeti.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
