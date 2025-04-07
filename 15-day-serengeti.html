@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teva Eco Travel - Destinations</title>
+    <title>15-Day Safari & Beach Vacation | Teva EcoTravel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="icon" href="./favicon_io" type="image/x-icon">
     <link rel="shortcut icon" href="./favicon_io" type="image/x-icon">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
-    <link rel="stylesheet" href="styles/destinations.css">
+    <link rel="stylesheet" href="styles/15-day-serengeti.css">
 </head>
 <body>
     <header id="main-header">
@@ -96,217 +96,274 @@
         </div>
     </header>
 
-        <!-- Hero Section -->
-        <section class="safari-hero">
-            <div class="hero-content">
-                <h1>15-Day Ultimate Safari & Beach Escape</h1>
-                <p>From the wild plains of Serengeti to the pristine beaches of Zanzibar</p>
-                <a href="#itinerary" class="cta-button">Explore Itinerary</a>
-            </div>
-        </section>
+        <main class="safari-package">
+            <!-- Hero Section -->
+            <section class="package-hero">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>15-Day Safari & Beach Escape</h1>
+                    <p>From the wild plains of Serengeti to the pristine beaches of Zanzibar</p>
+                    <div class="hero-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-paw"></i>
+                            <span>7 Safari Days</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-umbrella-beach"></i>
+                            <span>5 Beach Days</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-moon"></i>
+                            <span>14 Nights</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
     
-        <!-- Package Overview -->
-        <section class="package-overview">
-            <div class="container">
-                <div class="overview-grid">
-                    <div class="overview-content">
-                        <h2>Journey Overview</h2>
-                        <p>This carefully curated 15-day adventure combines the best of Tanzania's wildlife and beach experiences. Track the Big Five in world-famous national parks, then unwind on powder-white beaches with turquoise waters.</p>
+            <!-- Itinerary Section -->
+            <section class="itinerary-section">
+                <div class="container">
+                    <h2>Your Journey Itinerary</h2>
+                    
+                    <div class="itinerary-tabs">
+                        <button class="tab-btn active" data-filter="all">All Days</button>
+                        <button class="tab-btn" data-filter="safari">Safari Days</button>
+                        <button class="tab-btn" data-filter="beach">Beach Days</button>
+                    </div>
+                    
+                    <div class="itinerary-days">
+                        <!-- Day 1 -->
+                        <div class="day-card" data-day-type="safari">
+                            <div class="day-number">Day 1</div>
+                            <div class="day-content">
+                                <h3>Arrival in Arusha</h3>
+                                <div class="day-details">
+                                    <p><i class="fas fa-map-marker-alt"></i> Arusha, Tanzania</p>
+                                    <p><i class="fas fa-hotel"></i> Rivertrees Country Inn</p>
+                                </div>
+                                <p>Arrive at Kilimanjaro International Airport, transfer to your lodge. Evening briefing about your safari adventure.</p>
+                            </div>
+                        </div>
                         
-                        <div class="highlights">
-                            <div class="highlight-item">
-                                <i class="fas fa-map-marked-alt"></i>
-                                <span>4 National Parks</span>
+                        <!-- Day 2 -->
+                        <div class="day-card" data-day-type="safari">
+                            <div class="day-number">Day 2</div>
+                            <div class="day-content">
+                                <h3>Tarangire National Park</h3>
+                                <div class="day-details">
+                                    <p><i class="fas fa-map-marker-alt"></i> Tarangire</p>
+                                    <p><i class="fas fa-hotel"></i> Tarangire Treetops Lodge</p>
+                                </div>
+                                <p>Morning drive to Tarangire famous for its elephant herds and baobab trees. Afternoon game drive followed by sundowner.</p>
                             </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-umbrella-beach"></i>
-                                <span>5 Beachfront Days</span>
+                        </div>
+                        
+                        <!-- Day 3-4 -->
+                        <div class="day-card" data-day-type="safari">
+                            <div class="day-number">Day 3-4</div>
+                            <div class="day-content">
+                                <h3>Lake Manyara & Ngorongoro</h3>
+                                <div class="day-details">
+                                    <p><i class="fas fa-map-marker-alt"></i> Ngorongoro Conservation Area</p>
+                                    <p><i class="fas fa-hotel"></i> Ngorongoro Farmhouse</p>
+                                </div>
+                                <p>Day 3: Game drive in Lake Manyara National Park. Day 4: Travel to Ngorongoro with cultural village visit.</p>
                             </div>
-                            <div class="highlight-item">
-                                <i class="fas fa-bed"></i>
-                                <span>Luxury Eco-Lodges</span>
+                        </div>
+                        
+                        <!-- Day 5-6 -->
+                        <div class="day-card" data-day-type="safari">
+                            <div class="day-number">Day 5-6</div>
+                            <div class="day-content">
+                                <h3>Ngorongoro Crater</h3>
+                                <div class="day-details">
+                                    <p><i class="fas fa-map-marker-alt"></i> Ngorongoro Crater</p>
+                                    <p><i class="fas fa-hotel"></i> Ngorongoro Serena Lodge</p>
+                                </div>
+                                <p>Two full days exploring the crater floor with picnic lunches. Highest density of predators in Africa.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Day 7-9 -->
+                        <div class="day-card" data-day-type="safari">
+                            <div class="day-number">Day 7-9</div>
+                            <div class="day-content">
+                                <h3>Serengeti National Park</h3>
+                                <div class="day-details">
+                                    <p><i class="fas fa-map-marker-alt"></i> Central Serengeti</p>
+                                    <p><i class="fas fa-hotel"></i> Serengeti Serena Lodge</p>
+                                </div>
+                                <p>Three full days exploring the Serengeti. Track the Great Migration with morning and afternoon game drives.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Day 10 -->
+                        <div class="day-card" data-day-type="transfer">
+                            <div class="day-number">Day 10</div>
+                            <div class="day-content">
+                                <h3>Flight to Zanzibar</h3>
+                                <div class="day-details">
+                                    <p><i class="fas fa-map-marker-alt"></i> Zanzibar</p>
+                                    <p><i class="fas fa-hotel"></i> The Z Hotel</p>
+                                </div>
+                                <p>Morning game drive en route to airstrip. Afternoon flight to Zanzibar. Transfer to beach resort.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Day 11-14 -->
+                        <div class="day-card" data-day-type="beach">
+                            <div class="day-number">Day 11-14</div>
+                            <div class="day-content">
+                                <h3>Zanzibar Beach Relaxation</h3>
+                                <div class="day-details">
+                                    <p><i class="fas fa-map-marker-alt"></i> Nungwi Beach</p>
+                                    <p><i class="fas fa-hotel"></i> The Z Hotel</p>
+                                </div>
+                                <p>Four days of pure relaxation. Optional activities include snorkeling, spice tours, or simply enjoying the beach.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Day 15 -->
+                        <div class="day-card" data-day-type="departure">
+                            <div class="day-number">Day 15</div>
+                            <div class="day-content">
+                                <h3>Departure</h3>
+                                <div class="day-details">
+                                    <p><i class="fas fa-map-marker-alt"></i> Zanzibar Airport</p>
+                                    <p><i class="fas fa-plane"></i> International Flight</p>
+                                </div>
+                                <p>Transfer to Zanzibar Airport for your flight home or onward journey.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="overview-image">
-                        <img src="https://images.unsplash.com/photo-1581250627546-89f0e24d5e9e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Safari jeep in savannah">
+                </div>
+            </section>
+    
+            <!-- Gallery Section -->
+            <section class="gallery-section">
+                <div class="container">
+                    <h2>Experience Gallery</h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1550358864-518f202c02ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+                            <div class="gallery-overlay">
+                                <p>Serengeti Sunset</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1564501049415-5bb8d93fc8a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+                            <div class="gallery-overlay">
+                                <p>Zanzibar Beaches</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+                            <div class="gallery-overlay">
+                                <p>Ngorongoro Crater</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1581250627546-89f0e24d5e9e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+                            <div class="gallery-overlay">
+                                <p>Safari Adventure</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+                            <div class="gallery-overlay">
+                                <p>Wildlife Encounters</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1564349683135-4da2d0a8a39a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+                            <div class="gallery-overlay">
+                                <p>Beach Relaxation</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+    
+            <!-- Inclusions/Excludes Section -->
+            <section class="inclusion-section">
+                <div class="container">
+                    <div class="inclusion-grid">
+                        <div class="inclusion-box includes">
+                            <h3><i class="fas fa-check-circle"></i> What's Included</h3>
+                            <ul>
+                                <li>All national park fees & conservation charges</li>
+                                <li>14 nights luxury accommodation</li>
+                                <li>All meals during safari (breakfast only at beach)</li>
+                                <li>Professional safari guide & private 4x4 vehicle</li>
+                                <li>Domestic flights (Arusha-Zanzibar)</li>
+                                <li>All ground transfers</li>
+                                <li>Emergency medical evacuation insurance</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="inclusion-box excludes">
+                            <h3><i class="fas fa-times-circle"></i> What's Excluded</h3>
+                            <ul>
+                                <li>International flights</li>
+                                <li>Travel insurance</li>
+                                <li>Alcoholic beverages</li>
+                                <li>Optional activities (balloon safari, spa, etc.)</li>
+                                <li>Tips for guides and staff</li>
+                                <li>Visa fees (if applicable)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Price CTA -->
+            <section class="price-cta">
+                <div class="container">
+                    <div class="price-card">
+                        <div class="price-content">
+                            <h3>Ready for Your Adventure?</h3>
+                            <div class="price-amount">From $5,800 per person</div>
+                            <p>Based on double occupancy. Single supplement available.</p>
+                        </div>
+                        <a href="booking.html" class="cta-button">Book Now</a>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-<!-- Itinerary Section -->
-<section id="itinerary" class="itinerary-section">
+<footer class="minimal-footer">
     <div class="container">
-        <h2>Detailed 15-Day Itinerary</h2>
-        
-        <div class="itinerary-tabs">
-            <div class="tab active" data-day="all">All Days</div>
-            <div class="tab" data-day="safari">Safari Days (1-9)</div>
-            <div class="tab" data-day="beach">Beach Days (10-15)</div>
-        </div>
-        
-        <div class="itinerary-days">
-            <!-- Day 1 -->
-            <div class="day-card" data-day-type="safari">
-                <div class="day-number">Day 1</div>
-                <div class="day-content">
-                    <h3>Arrival in Arusha</h3>
-                    <div class="day-details">
-                        <p><i class="fas fa-map-marker-alt"></i> Arusha, Tanzania</p>
-                        <p><i class="fas fa-hotel"></i> Rivertrees Country Inn</p>
-                    </div>
-                    <p>Arrive at Kilimanjaro International Airport, transfer to your lodge. Evening briefing about your safari adventure with welcome dinner.</p>
-                </div>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="images/Artboard 3 (1).png" alt="Teva Eco Travel" class="footer-logo">
+                <p class="footer-tagline">Sustainable Travel Experiences</p>
             </div>
             
-            <!-- Day 2 -->
-            <div class="day-card" data-day-type="safari">
-                <div class="day-number">Day 2</div>
-                <div class="day-content">
-                    <h3>Tarangire National Park</h3>
-                    <div class="day-details">
-                        <p><i class="fas fa-map-marker-alt"></i> Tarangire</p>
-                        <p><i class="fas fa-hotel"></i> Tarangire Treetops Lodge</p>
-                    </div>
-                    <p>Morning drive to Tarangire famous for its elephant herds and baobab trees. Afternoon game drive followed by sundowner at the lodge.</p>
-                </div>
-            </div>
-            
-            <!-- Day 3-4 -->
-            <div class="day-card" data-day-type="safari">
-                <div class="day-number">Day 3-4</div>
-                <div class="day-content">
-                    <h3>Lake Manyara & Ngorongoro Highlands</h3>
-                    <div class="day-details">
-                        <p><i class="fas fa-map-marker-alt"></i> Lake Manyara</p>
-                        <p><i class="fas fa-hotel"></i> Ngorongoro Farmhouse</p>
-                    </div>
-                    <p>Day 3: Game drive in Lake Manyara National Park (tree-climbing lions). Day 4: Travel to Ngorongoro with stop at Mto wa Mbu cultural village.</p>
-                </div>
-            </div>
-            
-            <!-- Day 5-6 -->
-            <div class="day-card" data-day-type="safari">
-                <div class="day-number">Day 5-6</div>
-                <div class="day-content">
-                    <h3>Ngorongoro Crater</h3>
-                    <div class="day-details">
-                        <p><i class="fas fa-map-marker-alt"></i> Ngorongoro Crater</p>
-                        <p><i class="fas fa-hotel"></i> Ngorongoro Serena Lodge</p>
-                    </div>
-                    <p>Full day crater tour with picnic lunch. Highest density of predators in Africa. Second day for optional walking safari or Maasai village visit.</p>
-                </div>
-            </div>
-            
-            <!-- Day 7-9 -->
-            <div class="day-card" data-day-type="safari">
-                <div class="day-number">Day 7-9</div>
-                <div class="day-content">
-                    <h3>Serengeti National Park</h3>
-                    <div class="day-details">
-                        <p><i class="fas fa-map-marker-alt"></i> Central Serengeti</p>
-                        <p><i class="fas fa-hotel"></i> Serengeti Serena Lodge</p>
-                    </div>
-                    <p>Three full days exploring the Serengeti. Morning and afternoon game drives tracking the Great Migration (seasonal). Optional hot air balloon safari available.</p>
-                </div>
-            </div>
-            
-            <!-- Day 10 -->
-            <div class="day-card" data-day-type="transfer">
-                <div class="day-number">Day 10</div>
-                <div class="day-content">
-                    <h3>Flight to Zanzibar</h3>
-                    <div class="day-details">
-                        <p><i class="fas fa-map-marker-alt"></i> Serengeti to Zanzibar</p>
-                        <p><i class="fas fa-hotel"></i> The Z Hotel</p>
-                    </div>
-                    <p>Morning game drive en route to airstrip. Afternoon flight to Zanzibar. Transfer to beach resort with evening at leisure.</p>
-                </div>
-            </div>
-            
-            <!-- Day 11-14 -->
-            <div class="day-card" data-day-type="beach">
-                <div class="day-number">Day 11-14</div>
-                <div class="day-content">
-                    <h3>Zanzibar Beach Relaxation</h3>
-                    <div class="day-details">
-                        <p><i class="fas fa-map-marker-alt"></i> Nungwi Beach</p>
-                        <p><i class="fas fa-hotel"></i> The Z Hotel</p>
-                    </div>
-                    <p>Four days of pure relaxation. Optional activities include: snorkeling at Mnemba Atoll, spice tour, Stone City excursion, dhow sunset cruise, or spa treatments.</p>
-                </div>
-            </div>
-            
-            <!-- Day 15 -->
-            <div class="day-card" data-day-type="departure">
-                <div class="day-number">Day 15</div>
-                <div class="day-content">
-                    <h3>Departure</h3>
-                    <div class="day-details">
-                        <p><i class="fas fa-map-marker-alt"></i> Zanzibar to Home</p>
-                        <p><i class="fas fa-plane"></i> International Flight</p>
-                    </div>
-                    <p>Transfer to Zanzibar Airport for your international flight home or extension to other destinations.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-  <!-- Gallery Section -->
-  <section class="gallery-section">
-    <div class="container">
-        <h2>Experience Gallery</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item safari">
-                <img src="https://images.unsplash.com/photo-1550358864-518f202c02ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Lions on safari">
-            </div>
-            <div class="gallery-item beach">
-                <img src="https://images.unsplash.com/photo-1564501049415-5bb8d93fc8a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Zanzibar beach">
-            </div>
-            <!-- More gallery items -->
-        </div>
-    </div>
-</section>
-
-<!-- Includes/Excludes Section -->
-<section class="inclusion-section">
-    <div class="container">
-        <div class="inclusion-grid">
-            <div class="inclusion-box includes">
-                <h3><i class="fas fa-check-circle"></i> What's Included</h3>
+            <div class="footer-links">
                 <ul>
-                    <li>All park entry fees and conservation charges</li>
-                    <li>Luxury safari lodges & beach resorts</li>
-                    <li>All meals during safari (breakfast only at beach)</li>
-                    <li>Professional guide and 4x4 safari vehicle</li>
-                    <li>Domestic flights (Arusha-Zanzibar-Dar es Salaam)</li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             
-            <div class="inclusion-box excludes">
-                <h3><i class="fas fa-times-circle"></i> What's Excluded</h3>
-                <ul>
-                    <li>International flights</li>
-                    <li>Travel insurance</li>
-                    <li>Alcoholic beverages</li>
-                    <li>Optional activities (spa, diving, etc.)</li>
-                    <li>Tips for guides and staff</li>
-                </ul>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Teva Eco Travel. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <span>•</span>
+                <a href="terms.html">Terms</a>
+                <span>•</span>
+                <span>Website by Adams Visuals Ltd</span>
             </div>
         </div>
     </div>
-</section>
+</footer>
 
-<!-- CTA Section -->
-<section class="package-cta">
-    <div class="container">
-        <div class="cta-card">
-            <h2>Ready for Your Ultimate Adventure?</h2>
-            <p>Limited availability - Book your 2024 safari-beach combo today</p>
-            <div class="price">From $5,800 per person</div>
-            <a href="booking.html" class="cta-button">Book Now</a>
-        </div>
-    </div>
-</section>
+<script src="js/15-day-serengeti.js"></script>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>
