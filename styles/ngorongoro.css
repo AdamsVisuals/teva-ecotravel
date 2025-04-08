@@ -395,7 +395,7 @@ header.scrolled .secondary {
 /* ======================
    TYPOGRAPHY STYLES
    ====================== */
-body {
+.body {
     font-family: 'Lato', sans-serif;
     line-height: 1.6;
     color: var(--dark-text);
