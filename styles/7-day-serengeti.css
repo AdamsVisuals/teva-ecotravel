@@ -456,7 +456,7 @@ h1, h2, h3, h4, h5 {
 
 .hero-title {
     color: var(--light);
-    font-family: 'popins', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 3.5rem;
     margin-bottom: 1rem;
