@@ -99,215 +99,336 @@
         </div>
     </header>
 
-    <main class="destination-page">
-        <!-- Full Screen Hero with Premium Typography -->
-        <section class="destination-hero ngorongoro-hero">
+    <main>
+        <!-- Hero Section -->
+        <section class="ngorongoro-hero">
             <div class="hero-overlay"></div>
             <div class="hero-content">
-                <h1>Ngorongoro Crater</h1>
-                <p class="hero-subtitle">Where Nature's Drama Unfolds Beneath Ancient Walls</p>
-                <div class="hero-cta">
-                    <a href="#wildlife" class="cta-button">Explore Wildlife</a>
-                    <a href="#gallery" class="cta-button secondary">View Gallery</a>
-                </div>
+                <h1>Ngorongoro <span>Eco Safaris</span></h1>
+                <p>Explore the world’s largest intact caldera while supporting local conservation</p>
+                <a href="#safaris" class="explore-btn">
+                    <span>Explore Safaris</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
             </div>
-            <a href="#highlights" class="hero-scroll-down">
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </section>
-
-        <!-- Destination Intro with Elegant Typography -->
-        <section class="destination-intro">
-            <div class="intro-container">
-                <div class="intro-content">
-                    <h2>The Eighth Natural Wonder</h2>
-                    <p class="intro-lead">A prehistoric caldera where wildlife thrives in spectacular isolation</p>
-                    <div class="intro-text">
-                        <p>Ngorongoro Crater is a UNESCO World Heritage Site and one of Africa's most breathtaking natural wonders. This intact volcanic caldera spans 260 square kilometers with walls rising 600 meters, creating a self-contained ecosystem that shelters an extraordinary density of wildlife.</p>
-                        <p>Often called "Africa's Eden," the crater offers some of the most reliable game viewing on the continent, with predators and prey existing in a delicate balance within this natural amphitheater.</p>
-                    </div>
+            <div class="season-indicator">
+                <div class="season active" data-season="dry-season">
+                    <span>Dry Season</span>
+                    <small>June - October</small>
                 </div>
-                <div class="intro-image"></div>
-            </div>
-        </section>
-
-        <!-- Geological Facts with Clean Typography -->
-        <section class="geology-section">
-            <div class="section-header">
-                <span class="section-subtitle">Natural Wonder</span>
-                <h2 class="section-title">Geological Marvel</h2>
-                <div class="section-divider"></div>
-            </div>
-            
-            <div class="geology-grid">
-                <div class="geo-card">
-                    <div class="geo-number">1</div>
-                    <h3>Formation</h3>
-                    <p>Created 2-3 million years ago when a giant volcano collapsed inward after eruption</p>
-                </div>
-                <div class="geo-card">
-                    <div class="geo-number">2</div>
-                    <h3>Dimensions</h3>
-                    <p>260 km² floor area, 600m deep, 19km diameter - the world's largest intact caldera</p>
-                </div>
-                <div class="geo-card">
-                    <div class="geo-number">3</div>
-                    <h3>Ecosystems</h3>
-                    <p>Contains grasslands, forests, swamps, and Lake Magadi's alkaline waters</p>
+                <div class="season" data-season="wet-season">
+                    <span>Wet Season</span>
+                    <small>November - May</small>
                 </div>
             </div>
         </section>
-
-        <!-- Wildlife Section with Dramatic Typography -->
-        <section id="wildlife" class="wildlife-section">
-            <div class="section-header dark">
-                <span class="section-subtitle">Biodiversity</span>
-                <h2 class="section-title">Crater Wildlife</h2>
-                <p class="section-description">Approximately 25,000 large animals inhabit the crater floor</p>
-                <div class="section-divider"></div>
-            </div>
-            
-            <div class="wildlife-grid">
-                <div class="species-card">
-                    <div class="species-image lion-img"></div>
-                    <div class="species-content">
-                        <span class="species-category">Predators</span>
-                        <h3>Lion Prides</h3>
-                        <p>The crater hosts about 60 lions in 6 prides, including the famous black-maned males. Their population is unusually stable due to the crater's enclosed nature.</p>
-                        <div class="species-stats">
-                            <div class="stat">
-                                <span class="stat-number">6</span>
-                                <span class="stat-label">Prides</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">60+</span>
-                                <span class="stat-label">Lions</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="species-card reverse">
-                    <div class="species-image rhino-img"></div>
-                    <div class="species-content">
-                        <span class="species-category">Endangered</span>
-                        <h3>Black Rhino</h3>
-                        <p>Ngorongoro is one of the last strongholds for the critically endangered black rhino in Tanzania. About 30 individuals roam the crater floor under constant protection.</p>
-                        <div class="species-stats">
-                            <div class="stat">
-                                <span class="stat-number">30</span>
-                                <span class="stat-label">Individuals</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">24/7</span>
-                                <span class="stat-label">Protection</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="species-card">
-                    <div class="species-image flamingo-img"></div>
-                    <div class="species-content">
-                        <span class="species-category">Avian</span>
-                        <h3>Flamingo Flocks</h3>
-                        <p>Lake Magadi's alkaline waters attract thousands of lesser flamingos that create a stunning pink ribbon along the shoreline, especially in the rainy season.</p>
-                        <div class="species-stats">
-                            <div class="stat">
-                                <span class="stat-number">500+</span>
-                                <span class="stat-label">Bird Species</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">10k</span>
-                                <span class="stat-label">Flamingos</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Gallery Section with Elegant Captions -->
-        <section id="gallery" class="gallery-section">
-            <div class="section-header">
-                <span class="section-subtitle">Visual Journey</span>
-                <h2 class="section-title">Ngorongoro in Focus</h2>
-                <div class="section-divider"></div>
-            </div>
-            
-            <div class="gallery-grid">
-                <figure class="gallery-item">
-                    <div class="gallery-image crater-panorama-img"></div>
-                    <figcaption class="gallery-caption">
-                        <h3>Crater Panorama</h3>
-                        <p>View from the rim at sunrise</p>
-                    </figcaption>
-                </figure>
-                <figure class="gallery-item">
-                    <div class="gallery-image lion-hunt-img"></div>
-                    <figcaption class="gallery-caption">
-                        <h3>Predator Action</h3>
-                        <p>Lions hunting at dawn</p>
-                    </figcaption>
-                </figure>
-                <figure class="gallery-item">
-                    <div class="gallery-image flamingo-lake-img"></div>
-                    <figcaption class="gallery-caption">
-                        <h3>Lake Magadi</h3>
-                        <p>Flamingos feeding in alkaline waters</p>
-                    </figcaption>
-                </figure>
-                <figure class="gallery-item">
-                    <div class="gallery-image elephant-forest-img"></div>
-                    <figcaption class="gallery-caption">
-                        <h3>Lerai Forest</h3>
-                        <p>Elephants in acacia woodland</p>
-                    </figcaption>
-                </figure>
-                <figure class="gallery-item">
-                    <div class="gallery-image maasai-village-img"></div>
-                    <figcaption class="gallery-caption">
-                        <h3>Cultural Heritage</h3>
-                        <p>Maasai village on the crater rim</p>
-                    </figcaption>
-                </figure>
-                <figure class="gallery-item">
-                    <div class="gallery-image sunset-img"></div>
-                    <figcaption class="gallery-caption">
-                        <h3>Golden Hour</h3>
-                        <p>Sunset over the crater floor</p>
-                    </figcaption>
-                </figure>
-            </div>
-        </section>
-
+    
         <!-- Conservation Section -->
         <section class="conservation-section">
-            <div class="conservation-container">
+            <div class="container">
                 <div class="conservation-content">
-                    <span class="section-subtitle">Preservation</span>
-                    <h2 class="section-title">Conservation Legacy</h2>
-                    <div class="section-divider"></div>
-                    <p>Ngorongoro Conservation Area represents a pioneering model of multiple land use where wildlife coexists with semi-nomadic Maasai pastoralists. This delicate balance has been maintained since the area's establishment in 1959.</p>
-                    <ul class="conservation-list">
-                        <li><i class="fas fa-check"></i> UNESCO World Heritage Site since 1979</li>
-                        <li><i class="fas fa-check"></i> International Biosphere Reserve</li>
-                        <li><i class="fas fa-check"></i> Rhino protection program</li>
-                        <li><i class="fas fa-check"></i> Sustainable tourism practices</li>
-                        <li><i class="fas fa-check"></i> Maasai cultural preservation</li>
-                    </ul>
+                    <h2>Conservation at the Core</h2>
+                    <p class="intro-text">Our eco-safaris help preserve Ngorongoro’s unique biodiversity through:</p>
+    
+                    <div class="conservation-grid">
+                        <div class="conservation-card">
+                            <div class="card-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h3>Crater Preservation</h3>
+                            <p>Portions of each booking fund restoration and anti-erosion projects within the crater basin.</p>
+                        </div>
+    
+                        <div class="conservation-card">
+                            <div class="card-icon">
+                                <i class="fas fa-tree"></i>
+                            </div>
+                            <h3>Eco-Friendly Lodges</h3>
+                            <p>We partner only with lodges that use sustainable building materials and solar energy.</p>
+                        </div>
+    
+                        <div class="conservation-card">
+                            <div class="card-icon">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <h3>Local Empowerment</h3>
+                            <p>Over 80% of our workforce is sourced from Maasai communities living around the crater.</p>
+                        </div>
+                    </div>
+    
+                    <div class="conservation-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Carbon Neutral Safaris</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Species Protected</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">500K+</span>
+                            <span class="stat-label">Acres Conserved</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="conservation-image"></div>
             </div>
         </section>
+    
+        <!-- Safari Packages -->
+        <section id="safaris" class="safari-packages">
+            <div class="container">
+                <h2>Ngorongoro Safari Packages</h2>
+                <p class="section-subtitle">Choose your sustainable adventure</p>
+    
+                <div class="package-tabs">
+                    <div class="tab active" data-tab="classic">Classic Safaris</div>
+                    <div class="tab" data-tab="luxury">Luxury Eco</div>
+                    <div class="tab" data-tab="cultural">Cultural Tours</div>
+                </div>
+    
+                <div class="package-content active" data-tab-content="classic">
+                    <div class="package-card">
+                        <div class="package-image" style="background-image: url('images/ngorongoro-view.jpg')">
+                            <div class="package-badge">Popular</div>
+                        </div>
+                        <div class="package-details">
+                            <h3>3-Day Classic Crater Safari</h3>
+                            <div class="package-highlights">
+                                <div class="highlight">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Year-Round</span>
+                                </div>
+                                <div class="highlight">
+                                    <i class="fas fa-users"></i>
+                                    <span>Group Tours</span>
+                                </div>
+                                <div class="highlight">
+                                    <i class="fas fa-campground"></i>
+                                    <span>Tented Camps</span>
+                                </div>
+                            </div>
+                            <p>Discover the crater's diverse wildlife with eco-conscious guides and camps designed to leave no trace.</p>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> Daily game drives in electric vehicles</li>
+                                <li><i class="fas fa-check"></i> Organic meals</li>
+                                <li><i class="fas fa-check"></i> Crater conservation fee included</li>
+                            </ul>
+                            <div class="package-footer">
+                                <span class="package-price">From $1,500/person</span>
+                                <a href="booking.html" class="package-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="package-content" data-tab-content="luxury">
+                    <div class="package-card">
+                        <div class="package-image" style="background-image: url('images/luxury-lodge.jpg')">
+                            <div class="package-badge">Luxury</div>
+                        </div>
+                        <div class="package-details">
+                            <h3>5-Day Luxury Eco Safari</h3>
+                            <div class="package-highlights">
+                                <div class="highlight">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>June - October</span>
+                                </div>
+                                <div class="highlight">
+                                    <i class="fas fa-user-friends"></i>
+                                    <span>Private Experience</span>
+                                </div>
+                                <div class="highlight">
+                                    <i class="fas fa-hotel"></i>
+                                    <span>Solar-Powered Lodges</span>
+                                </div>
+                            </div>
+                            <p>Relax in premium eco-lodges and explore the crater and highlands in responsible luxury.</p>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> All-inclusive luxury experience</li>
+                                <li><i class="fas fa-check"></i> Guided crater hikes</li>
+                                <li><i class="fas fa-check"></i> Personalized conservation talks</li>
+                            </ul>
+                            <div class="package-footer">
+                                <span class="package-price">From $3,900/person</span>
+                                <a href="booking.html" class="package-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="package-content" data-tab-content="cultural">
+                    <div class="package-card">
+                        <div class="package-image" style="background-image: url('images/maasai-visit.jpg')">
+                            <div class="package-badge">Cultural</div>
+                        </div>
+                        <div class="package-details">
+                            <h3>4-Day Maasai Cultural Tour</h3>
+                            <div class="package-highlights">
+                                <div class="highlight">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Year-Round</span>
+                                </div>
+                                <div class="highlight">
+                                    <i class="fas fa-people-arrows"></i>
+                                    <span>Immersive Experience</span>
+                                </div>
+                                <div class="highlight">
+                                    <i class="fas fa-home"></i>
+                                    <span>Eco Villages</span>
+                                </div>
+                            </div>
+                            <p>Connect with the indigenous Maasai communities through respectful, immersive cultural programs.</p>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> Homestay with local families</li>
+                                <li><i class="fas fa-check"></i> Traditional dance and storytelling</li>
+                                <li><i class="fas fa-check"></i> Guided crater-edge nature walks</li>
+                            </ul>
+                            <div class="package-footer">
+                                <span class="package-price">From $1,800/person</span>
+                                <a href="booking.html" class="package-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Wildlife Section -->
+        <section class="wildlife-section">
+            <div class="container">
+                <h2>Ngorongoro Wildlife</h2>
+                <p class="section-subtitle">Witness an astonishing diversity of species</p>
+    
+                <div class="wildlife-grid">
+                    <div class="wildlife-card">
+                        <div class="wildlife-image" style="background-image: url('images/rhino.jpg')"></div>
+                        <div class="wildlife-info">
+                            <h3>Black Rhinos</h3>
+                            <p>Critically endangered and closely monitored within the crater.</p>
+                            <span class="wildlife-season">Best seen: Year-round</span>
+                        </div>
+                    </div>
+    
+                    <div class="wildlife-card">
+                        <div class="wildlife-image" style="background-image: url('images/lion.jpg')"></div>
+                        <div class="wildlife-info">
+                            <h3>Lions</h3>
+                            <p>One of the densest lion populations in Africa resides here.</p>
+                            <span class="wildlife-season">Best seen: June - October</span>
+                        </div>
+                    </div>
+    
+                    <div class="wildlife-card">
+                        <div class="wildlife-image" style="background-image: url('images/hippos.jpg')"></div>
+                        <div class="wildlife-info">
+                            <h3>Hippos</h3>
+                            <p>Watch pods of hippos lounging in crater waterholes.</p>
+                            <span class="wildlife-season">Best seen: Wet season</span>
+                        </div>
+                    </div>
+    
+                    <div class="wildlife-card">
+                        <div class="wildlife-image" style="background-image: url('images/flamingos.jpg')"></div>
+                        <div class="wildlife-info">
+                            <h3>Flamingos</h3>
+                            <p>Lake Magadi attracts thousands of pink flamingos in season.</p>
+                            <span class="wildlife-season">Peak: November - April</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Testimonials -->
+        <section class="testimonial-section">
+            <div class="container">
+                <h2>Traveler Stories</h2>
+                <p class="section-subtitle">What our guests say about our Ngorongoro safaris</p>
+    
+                <div class="testimonial-slider">
+                    <div class="testimonial active">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <blockquote>
+                                "Ngorongoro took our breath away. Knowing our trip helped fund conservation made it even more special."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-image" style="background-image: url('https://randomuser.me/api/portraits/men/75.jpg')"></div>
+                                <div class="author-info">
+                                    <span class="author-name">Liam Anderson</span>
+                                    <span class="author-location">Stockholm, Sweden</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <blockquote>
+                                "The eco-lodges were stunning, and the wildlife sightings in the crater were unforgettable."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-image" style="background-image: url('https://randomuser.me/api/portraits/women/24.jpg')"></div>
+                                <div class="author-info">
+                                    <span class="author-name">Isabella Mendes</span>
+                                    <span class="author-location">Lisbon, Portugal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <blockquote>
+                                "I loved how cultural experiences were integrated without compromising the environment."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-image" style="background-image: url('https://randomuser.me/api/portraits/men/20.jpg')"></div>
+                                <div class="author-info">
+                                    <span class="author-name">Carlos Rivera</span>
+                                    <span class="author-location">San José, Costa Rica</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="slider-controls">
+                        <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                        <div class="slider-dots"></div>
+                        <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <!-- CTA Section -->
-        <section class="destination-cta">
-            <div class="cta-overlay"></div>
-            <div class="cta-content">
-                <h2>Ready to Experience Ngorongoro?</h2>
-                <p>Include this natural wonder in your customized safari itinerary</p>
-                <a href="#contact" class="cta-button">Inquire Now</a>
+        <!-- Booking CTA -->
+        <section class="serengeti-cta">
+            <div class="container">
+                <div class="cta-card">
+                    <h2>Ready for Your Eco Safari?</h2>
+                    <p>Our safari experts will create a personalized itinerary that matches your travel style while maximizing conservation impact.</p>
+                    <div class="cta-buttons">
+                        <a href="booking.html" class="cta-btn primary">
+                            <span>Book Your Safari</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="cta-btn secondary">
+                            <span>Ask a Question</span>
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -349,7 +470,7 @@
     </div>
 </footer>
 
-<script src="js/15-day-serengeti.js"></script>
+<script src="js/serengeti.js"></script>
 <script src="script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>

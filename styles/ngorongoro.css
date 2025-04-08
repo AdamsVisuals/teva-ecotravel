@@ -392,230 +392,750 @@ header.scrolled .secondary {
         display: none;
     }
 }
-/* ======================
-   TYPOGRAPHY STYLES
-   ====================== */
-.body {
-    font-family: 'Lato', sans-serif;
-    line-height: 1.6;
-    color: var(--dark-text);
-    font-weight: 400;
+
+/* Serengeti Page Specific Styles */
+.serengeti-hero {
+    position: relative;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--light-text);
+    overflow: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.serengeti-hero .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.7) 100%);
+    z-index: 1;
+}
+
+.serengeti-hero .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    padding: 0 2rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+.serengeti-hero h1 {
     font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    line-height: 1.2;
-    margin-top: 0;
-}
-
-/* Hero Typography */
-.hero h1 {
-    font-size: 4.5rem;
+    font-size: 5rem;
     font-weight: 700;
-    letter-spacing: -0.5px;
-    line-height: 1.1;
     margin-bottom: 1.5rem;
+    line-height: 1.1;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.hero-subtitle {
-    font-family: 'Montserrat', sans-serif;
+.serengeti-hero h1 span {
+    color: var(--sage-green);
+    position: relative;
+    display: inline-block;
+}
+
+.serengeti-hero h1 span::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background-color: rgba(156, 175, 136, 0.4);
+    z-index: -1;
+}
+
+.serengeti-hero p {
     font-size: 1.5rem;
     font-weight: 300;
-    letter-spacing: 1px;
-    text-transform: uppercase;
     margin-bottom: 2.5rem;
+    opacity: 0.9;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* Section Headers */
-.section-header {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.section-title {
-    font-size: 2.8rem;
-    font-weight: 600;
-    color: var(--moss-green);
-    margin-bottom: 1rem;
-    position: relative;
-}
-
-.section-subtitle {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+.explore-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: var(--moss-green);
+    color: var(--light-text);
+    padding: 1rem 2rem;
+    border-radius: 50px;
     font-weight: 500;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--sage-green);
-    display: block;
-    margin-bottom: 1rem;
+    text-decoration: none;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.section-divider {
-    width: 80px;
-    height: 3px;
+.explore-btn:hover {
     background-color: var(--sage-green);
-    margin: 1.5rem auto;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-.section-description {
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin: 0 auto;
-    color: var(--dark-text);
-    opacity: 0.9;
+.explore-btn svg {
+    transition: var(--transition);
 }
 
-/* Content Typography */
-.intro-lead {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
+.explore-btn:hover svg {
+    transform: translateX(5px);
+}
+
+.season-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1.5rem;
+    z-index: 2;
+}
+
+.season {
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.season.active {
+    background-color: var(--sage-green);
+    border-color: var(--sage-green);
+}
+
+.season span {
+    display: block;
     font-weight: 500;
-    font-style: italic;
-    color: var(--moss-green);
-    margin-bottom: 2rem;
-    line-height: 1.3;
+    margin-bottom: 0.25rem;
 }
 
-.intro-text {
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
-.intro-text p {
-    margin-bottom: 1.5rem;
-}
-
-/* Card Typography */
-.geo-card h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 1.3rem;
-    color: var(--moss-green);
-    margin: 1rem 0;
-}
-
-.geo-card p {
-    font-size: 1rem;
-    color: var(--dark-text);
-    opacity: 0.9;
-}
-
-.species-card h3 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-}
-
-.species-category {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--sage-green);
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-.species-content p {
-    font-size: 1.05rem;
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
-}
-
-/* Stat Typography */
-.stat-number {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--moss-green);
-    display: block;
-    line-height: 1;
-}
-
-.stat-label {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--dark-text);
-    opacity: 0.7;
-}
-
-/* Gallery Typography */
-.gallery-caption h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 0.3rem;
-}
-
-.gallery-caption p {
-    font-size: 0.9rem;
-    font-style: italic;
+.season small {
+    font-size: 0.75rem;
     opacity: 0.8;
 }
 
-/* CTA Typography */
-.destination-cta h2 {
+/* Conservation Section */
+.conservation-section {
+    padding: 6rem 0;
+    background-color: var(--light-text);
+}
+
+.conservation-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.conservation-content h2 {
+    font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
+    color: var(--moss-green);
+    margin-bottom: 1.5rem;
+}
+
+.intro-text {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.conservation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.conservation-card {
+    background-color: var(--peanut-cream);
+    padding: 2rem;
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.conservation-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--moss-green);
+    color: var(--light-text);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 1.5rem;
+}
+
+.conservation-card h3 {
+    font-family: 'Playfair Display', serif;
     margin-bottom: 1rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    color: var(--dark-text);
 }
 
-.destination-cta p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
+.conservation-card p {
+    color: var(--dark-text);
+    opacity: 0.9;
+    font-size: 0.95rem;
+}
+
+.conservation-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--moss-green);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--dark-text);
+}
+
+/* Safari Packages */
+.safari-packages {
+    padding: 6rem 0;
+    background-color: var(--cream);
+}
+
+.safari-packages h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--moss-green);
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    font-size: 1.1rem;
+    color: var(--dark-text);
+    opacity: 0.8;
+}
+
+.package-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.tab {
+    padding: 0.75rem 1.5rem;
+    background-color: transparent;
+    color: var(--dark-text);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 500;
+    border: 1px solid var(--sage-green);
+}
+
+.tab.active {
+    background-color: var(--sage-green);
+    color: var(--light-text);
+}
+
+.package-content {
+    display: none;
+}
+
+.package-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.package-card {
+    background-color: var(--light-text);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.package-image {
+    flex: 1;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.package-badge {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background-color: var(--moss-green);
+    color: var(--light-text);
+    padding: 0.25rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.package-details {
+    flex: 1;
+    padding: 2.5rem;
+}
+
+.package-details h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75rem;
+    color: var(--moss-green);
+    margin-bottom: 1.5rem;
+}
+
+.package-highlights {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.highlight {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--dark-text);
+}
+
+.highlight i {
+    color: var(--sage-green);
+}
+
+.package-details p {
+    margin-bottom: 1.5rem;
+    color: var(--dark-text);
+    line-height: 1.7;
+}
+
+.package-features {
+    list-style: none;
     margin-bottom: 2rem;
-    font-weight: 300;
 }
 
-/* ======================
-   RESPONSIVE TYPOGRAPHY
-   ====================== */
-@media (max-width: 992px) {
-    .hero h1 {
-        font-size: 3.5rem;
+.package-features li {
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 1.75rem;
+}
+
+.package-features li i {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    color: var(--sage-green);
+    font-size: 0.9rem;
+}
+
+.package-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.package-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--moss-green);
+}
+
+.package-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--moss-green);
+    color: var(--light-text);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.package-btn:hover {
+    background-color: var(--sage-green);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(107, 142, 78, 0.4);
+}
+
+/* Wildlife Section */
+.wildlife-section {
+    padding: 6rem 0;
+    background-color: var(--light-text);
+}
+
+.wildlife-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.wildlife-card {
+    background-color: var(--light-text);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.wildlife-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.wildlife-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.wildlife-info {
+    padding: 1.5rem;
+}
+
+.wildlife-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    color: var(--moss-green);
+    margin-bottom: 0.75rem;
+}
+
+.wildlife-info p {
+    margin-bottom: 1rem;
+    color: var(--dark-text);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.wildlife-season {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--sage-green);
+    font-weight: 500;
+}
+
+/* Testimonials */
+.testimonial-section {
+    padding: 6rem 0;
+    background-color: var(--cream);
+}
+
+.testimonial-slider {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.testimonial {
+    display: none;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.testimonial.active {
+    display: block;
+}
+
+.testimonial-content {
+    background-color: var(--light-text);
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.quote-icon {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    color: var(--peanut-cream);
+    font-size: 3rem;
+    opacity: 0.3;
+}
+
+.testimonial-content blockquote {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--dark-text);
+    margin-bottom: 2rem;
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    font-weight: 600;
+    color: var(--dark-text);
+}
+
+.author-location {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.slider-prev,
+.slider-next {
+    background: none;
+    border: none;
+    color: var(--moss-green);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.slider-prev:hover,
+.slider-next:hover {
+    color: var(--sage-green);
+}
+
+.slider-dots {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.slider-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.slider-dots .dot.active {
+    background-color: var(--moss-green);
+}
+
+/* CTA Section */
+.serengeti-cta {
+    padding: 6rem 0;
+    background-color: var(--light-text);
+}
+
+.cta-card {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem;
+    background-color: var(--peanut-cream);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cta-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--moss-green);
+    margin-bottom: 1rem;
+}
+
+.cta-card p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: var(--dark-text);
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.cta-btn.primary {
+    background-color: var(--moss-green);
+    color: var(--light-text);
+    box-shadow: 0 4px 15px rgba(107, 142, 78, 0.3);
+}
+
+.cta-btn.primary:hover {
+    background-color: var(--sage-green);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(107, 142, 78, 0.4);
+}
+
+.cta-btn.secondary {
+    background-color: transparent;
+    color: var(--moss-green);
+    border: 1px solid var(--moss-green);
+}
+
+.cta-btn.secondary:hover {
+    background-color: rgba(107, 142, 78, 0.1);
+    transform: translateY(-3px);
+}
+
+.cta-btn i {
+    transition: var(--transition);
+}
+
+.cta-btn:hover i {
+    transform: translateX(5px);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .package-card {
+        flex-direction: column;
     }
     
-    .section-title {
-        font-size: 2.4rem;
-    }
-    
-    .intro-lead {
-        font-size: 1.5rem;
+    .package-image {
+        min-height: 300px;
     }
 }
 
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.8rem;
+    .serengeti-hero h1 {
+        font-size: 3.5rem;
     }
     
-    .hero-subtitle {
+    .serengeti-hero p {
         font-size: 1.2rem;
     }
     
-    .section-title {
-        font-size: 2rem;
+    .season-indicator {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
     }
     
-    .species-card h3 {
-        font-size: 1.5rem;
+    .season {
+        flex: 1;
+        min-width: 150px;
+        text-align: center;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .cta-card {
+        padding: 3rem 2rem;
+    }
+    
+    .testimonial-content {
+        padding: 2rem;
     }
 }
 
-@media (max-width: 576px) {
-    .hero h1 {
-        font-size: 2.2rem;
+@media (max-width: 480px) {
+    .serengeti-hero h1 {
+        font-size: 2.5rem;
     }
     
-    .section-title {
-        font-size: 1.8rem;
+    .package-tabs {
+        flex-direction: column;
     }
     
-    .destination-cta h2 {
+    .package-details {
+        padding: 1.5rem;
+    }
+    
+    .package-highlights {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .package-footer {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .cta-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .cta-card h2 {
         font-size: 2rem;
     }
 }
