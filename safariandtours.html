@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="icon" href="./favicon_io" type="image/x-icon">
     <link rel="shortcut icon" href="./favicon_io" type="image/x-icon">
@@ -100,107 +100,168 @@
         </div>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Discover Tanzania</h1>
-                <p>Embark on a journey through Tanzania's breathtaking landscapes and iconic wildlife destinations.</p>
-                <button class="cta-button">Explore Safaris</button>
-            </div>
-        </section>
-
-        <!-- Overview Section -->
-        <section class="overview">
-            <div class="section-header">
-                <h2>Our Tanzanian Safari Experiences</h2>
-                <div class="divider"></div>
-            </div>
-            <p>Experience the magic of Tanzania with our expertly curated safaris. From the Serengeti's Great Migration to the Ngorongoro Crater's unique ecosystem, our tours offer unforgettable adventures while prioritizing sustainability and conservation.</p>
-        </section>
-
-        <!-- Tours Grid Section -->
-        <section class="tours-grid">
-            <div class="section-header">
-                <h2>Featured Tanzanian Safaris</h2>
-                <div class="divider"></div>
-            </div>
-            
-            <div class="grid-container">
-                <!-- Tour Card 1 -->
-                <div class="tour-card">
-                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1509316785289-025f5b846b35?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
-                    <div class="card-content">
-                        <h3>Serengeti Migration</h3>
-                        <div class="card-details">
-                            <p>Witness the Great Migration across the Serengeti's vast plains.</p>
-                            <button class="learn-more">Learn More</button>
+        <main>
+            <!-- Full Screen Hero Section -->
+            <section class="hero">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>Wilderness Awaits</h1>
+                    <p class="hero-subtitle">Journey into the heart of nature with our exclusive safari experiences</p>
+                    <div class="hero-buttons">
+                        <button class="cta-button">Explore Tours</button>
+                        <button class="secondary-button">Customize Your Adventure</button>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <span></span>
+                </div>
+            </section>
+    
+            <!-- Overview Section -->
+            <section class="overview">
+                <div class="section-header">
+                    <h2>Our Safari Experiences</h2>
+                    <div class="divider"></div>
+                </div>
+                <p>We specialize in creating immersive wildlife experiences that connect you with nature while maintaining the highest standards of sustainability and ethical practices. Our expert guides will take you on journeys through diverse ecosystems, from the savannas of Africa to the rainforests of South America.</p>
+            </section>
+    
+            <!-- Tours Grid Section -->
+            <section class="tours-grid">
+                <div class="section-header">
+                    <h2>Featured Safari Packages</h2>
+                    <div class="divider"></div>
+                </div>
+                
+                <div class="grid-container">
+                    <!-- Tour Card 1 -->
+                    <div class="tour-card">
+                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1509316785289-025f5b846b35?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
+                        <div class="card-content">
+                            <div class="card-basic-info">
+                                <h3>Serengeti Migration</h3>
+                                <div class="package-type">Premium Safari</div>
+                                <div class="package-price">$3,200 <span>PP</span></div>
+                            </div>
+                            <div class="card-details">
+                                <p>7-day luxury safari witnessing the Great Migration across Tanzania's vast plains. Includes private guide, luxury tented camps, and all meals.</p>
+                                <div class="card-buttons">
+                                    <button class="view-tour">View Tour</button>
+                                    <button class="customize-tour">Customize</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Tour Card 2 -->
+                    <div class="tour-card">
+                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1581259021841-a16d9f3b8f82?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
+                        <div class="card-content">
+                            <div class="card-basic-info">
+                                <h3>Okavango Delta</h3>
+                                <div class="package-type">Adventure Safari</div>
+                                <div class="package-price">$2,800 <span>PP</span></div>
+                            </div>
+                            <div class="card-details">
+                                <p>5-day mokoro canoe safari exploring Botswana's unique inland delta. Includes guided wildlife walks and rustic bush camps.</p>
+                                <div class="card-buttons">
+                                    <button class="view-tour">View Tour</button>
+                                    <button class="customize-tour">Customize</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Tour Card 3 -->
+                    <div class="tour-card">
+                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
+                        <div class="card-content">
+                            <div class="card-basic-info">
+                                <h3>Amazon Expedition</h3>
+                                <div class="package-type">Rainforest Adventure</div>
+                                <div class="package-price">$2,500 <span>PP</span></div>
+                            </div>
+                            <div class="card-details">
+                                <p>8-day deep jungle experience in the Amazon basin. Includes riverboat transport, canopy walks, and indigenous community visits.</p>
+                                <div class="card-buttons">
+                                    <button class="view-tour">View Tour</button>
+                                    <button class="customize-tour">Customize</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Tour Card 4 -->
+                    <div class="tour-card">
+                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
+                        <div class="card-content">
+                            <div class="card-basic-info">
+                                <h3>Patagonia Trek</h3>
+                                <div class="package-type">Hiking Expedition</div>
+                                <div class="package-price">$3,600 <span>PP</span></div>
+                            </div>
+                            <div class="card-details">
+                                <p>10-day trek through Chilean Patagonia's stunning landscapes. Includes mountain refuges, expert guides, and all equipment.</p>
+                                <div class="card-buttons">
+                                    <button class="view-tour">View Tour</button>
+                                    <button class="customize-tour">Customize</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Tour Card 5 -->
+                    <div class="tour-card">
+                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1534188753412-3e26d0a618e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
+                        <div class="card-content">
+                            <div class="card-basic-info">
+                                <h3>Rwanda Gorillas</h3>
+                                <div class="package-type">Primate Safari</div>
+                                <div class="package-price">$4,200 <span>PP</span></div>
+                            </div>
+                            <div class="card-details">
+                                <p>4-day intimate encounter with mountain gorillas. Includes permits, luxury lodge, and cultural village experience.</p>
+                                <div class="card-buttons">
+                                    <button class="view-tour">View Tour</button>
+                                    <button class="customize-tour">Customize</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Tour Card 6 -->
+                    <div class="tour-card">
+                        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
+                        <div class="card-content">
+                            <div class="card-basic-info">
+                                <h3>Namib Desert</h3>
+                                <div class="package-type">Desert Safari</div>
+                                <div class="package-price">$2,900 <span>PP</span></div>
+                            </div>
+                            <div class="card-details">
+                                <p>6-day exploration of the world's oldest desert. Includes Sossusvlei dunes, Deadvlei, and luxury desert camp.</p>
+                                <div class="card-buttons">
+                                    <button class="view-tour">View Tour</button>
+                                    <button class="customize-tour">Customize</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Tour Card 2 -->
-                <div class="tour-card">
-                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1581259021841-a16d9f3b8f82?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
-                    <div class="card-content">
-                        <h3>Ngorongoro Crater</h3>
-                        <div class="card-details">
-                            <p>Explore the world's largest intact volcanic caldera teeming with wildlife.</p>
-                            <button class="learn-more">Learn More</button>
-                        </div>
+            </section>
+    
+            <!-- Custom Tour Section -->
+            <section class="custom-tour">
+                <div class="custom-tour-container">
+                    <div class="custom-tour-content">
+                        <h2>Need a Custom Tour?</h2>
+                        <p>Our travel experts can design a personalized safari experience tailored to your interests, schedule, and budget.</p>
+                        <button class="cta-button">Design Your Adventure</button>
                     </div>
+                    <div class="custom-tour-image"></div>
                 </div>
-
-                <!-- Tour Card 3 -->
-                <div class="tour-card">
-                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
-                    <div class="card-content">
-                        <h3>Tarangire National Park</h3>
-                        <div class="card-details">
-                            <p>Marvel at the iconic baobab trees and large elephant herds.</p>
-                            <button class="learn-more">Learn More</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tour Card 4 -->
-                <div class="tour-card">
-                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
-                    <div class="card-content">
-                        <h3>Lake Manyara</h3>
-                        <div class="card-details">
-                            <p>Discover tree-climbing lions and vibrant birdlife by the lake.</p>
-                            <button class="learn-more">Learn More</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tour Card 5 -->
-                <div class="tour-card">
-                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1534188753412-3e26d0a618e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
-                    <div class="card-content">
-                        <h3>Arusha National Park</h3>
-                        <div class="card-details">
-                            <p>Enjoy a mix of lush forests, craters, and Mount Meru's scenic views.</p>
-                            <button class="learn-more">Learn More</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tour Card 6 -->
-                <div class="tour-card">
-                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
-                    <div class="card-content">
-                        <h3>Zanzibar Beaches</h3>
-                        <div class="card-details">
-                            <p>Relax on pristine beaches and explore the rich cultural heritage.</p>
-                            <button class="learn-more">Learn More</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
     
     <footer class="minimal-footer">
         <div class="container">
