@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-Day Ngorongoro Crater Safari | Teva EcoTravel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="icon" href="./favicon_io" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon_io" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="styles/5-day-ngorongoro.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <ul class="nav-links left-links">
+                    <li class="dropdown">
+                        <a href="#">Destinations <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="serengeti.html">Serengeti National Park</a></li>
+                                <li><a href="tarangire.html">Tarangire National Park</a></li>
+                                <li><a href="ngorongoro.html">Ngorongoro Conservation Area</a></li>
+                                <li><a href="manyara.html">Lake Manyara National Park</a></li>
+                                <li><a href="arusha.html">Arusha National Park</a></li>
+                                <li><a href="zanzibar.html">Zanzibar Beaches</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Experiences <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#">Bush Walks</a></li>
+                                <li><a href="#">Cultural Experiences</a></li>
+                                <li><a href="#">Zanzibar Holidays</a></li>
+                                <li><a href="#">Family Friendly</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/Artboard 3 (1).png" alt="Teva Eco Travel">
+                    </a>
+                </div>
+                
+                <ul class="nav-links right-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="safariandtours.html">Safari & Tours</a></li>
+                </ul>
+                
+                <div class="nav-buttons">
+                    <a href="contact.html" class="btn secondary">Contact</a>
+                    <a href="booking.html" class="btn primary">Book Now</a>
+                </div>
+                
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <ul>
+                <li class="mobile-dropdown">
+                    <a href="destinations.html">Destinations <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">African Safaris</a></li>
+                        <li><a href="#">Asian Adventures</a></li>
+                        <li><a href="#">European Eco-Tours</a></li>
+                        <li><a href="#">South American Treks</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-dropdown">
+                    <a href="experience.html">Experiences <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">Wildlife Watching</a></li>
+                        <li><a href="#">Cultural Immersion</a></li>
+                        <li><a href="#">Eco-Lodges</a></li>
+                        <li><a href="#">Adventure Travel</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="safariandtours.html">Safari & Tours</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html" class="btn primary">Book Now</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+<!-- Hero Section -->
+<section class="safari-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>5-Day Ngorongoro Crater Safari</h1>
+        <p class="hero-subtitle">Experience the world's largest intact volcanic caldera and its incredible wildlife</p>
+        <div class="hero-buttons">
+            <button class="cta-button">Book This Safari</button>
+            <button class="secondary-button">Customize This Trip</button>
+        </div>
+    </div>
+</section>
+
+<!-- Safari Overview Section -->
+<section class="safari-overview">
+    <div class="container">
+        <div class="overview-header">
+            <h2>Journey Into the Caldera</h2>
+            <div class="divider"></div>
+            <p class="subtitle">A 5-Day Immersive Safari in One of Africa's Most Spectacular Wildlife Arenas</p>
+        </div>
+        
+        <div class="overview-grid">
+            <!-- Experience Highlights -->
+            <div class="highlights-card">
+                <div class="section-label">
+                    <span>Highlights</span>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7,10L12,15L17,10H7Z"/></svg>
+                    </div>
+                    <div class="highlight-content">
+                        <h4>Descend into the Crater</h4>
+                        <p>Explore the 260 sq km caldera floor teeming with over 25,000 animals</p>
+                    </div>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12,2L1,21H23M12,6L19.53,19H4.47M11,10V14H13V10M11,16V18H13V16"/></svg>
+                    </div>
+                    <div class="highlight-content">
+                        <h4>Big Five Sightings</h4>
+                        <p>Highest density of predators in Africa including rare black rhinos</p>
+                    </div>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <svg viewBox="0 0 24 24"><path d="M17.63,5.84C17.27,5.33 16.67,5 16,5H5A2,2 0 0,0 3,7V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V8C21,7.37 20.66,6.77 20.15,6.41L17.63,5.84M8,7H16V9H8V7M6,7V9H4V7H6M4,17V15H6V17H4M6,20V18H4V20H6M18,17A1,1 0 0,1 17,18A1,1 0 0,1 16,17A1,1 0 0,1 17,16A1,1 0 0,1 18,17M19,13V11H4V13H19Z"/></svg>
+                    </div>
+                    <div class="highlight-content">
+                        <h4>Luxury Lodge Stays</h4>
+                        <p>Crater-edge accommodations with breathtaking views and premium amenities</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Key Facts -->
+            <div class="facts-card">
+                <div class="section-label">
+                    <span>At a Glance</span>
+                </div>
+                <div class="fact-item">
+                    <div class="fact-label">Duration</div>
+                    <div class="fact-value">5 Days / 4 Nights</div>
+                </div>
+                <div class="fact-item">
+                    <div class="fact-label">Destinations</div>
+                    <div class="fact-value">Ngorongoro Crater, Lake Manyara</div>
+                </div>
+                <div class="fact-item">
+                    <div class="fact-label">Best Time</div>
+                    <div class="fact-value">June - October (Dry Season)</div>
+                </div>
+                <div class="fact-item">
+                    <div class="fact-label">Group Size</div>
+                    <div class="fact-value">Max 6 Guests</div>
+                </div>
+                <div class="price-box">
+                    <div class="from">From</div>
+                    <div class="price">$2,850 <span>per person</span></div>
+                    <button class="cta-button">Book Now</button>
+                </div>
+            </div>
+</section>
+
+        <!-- Itinerary Section -->
+        <section class="itinerary-section">
+            <div class="section-header">
+                <h2>Detailed Itinerary</h2>
+                <div class="divider"></div>
+            </div>
+    
+    <div class="grid-container">
+        <!-- Day 1 -->
+        <div class="destination-card itinerary-card">
+            <div class="card-image" style="background-image: url('images/2-day-manyara.webp')"></div>
+            <div class="card-content">
+                <div class="card-basic-info">
+                    <div class="day-number">Day 1</div>
+                    <h3>Arrival - Lake Manyara National Park</h3>
+                </div>
+                <div class="card-details">
+                    <p>Arrive at Kilimanjaro International Airport where you'll be met by your guide. Transfer to Lake Manyara National Park, known for its tree-climbing lions and large elephant herds. Afternoon game drive followed by dinner at your lodge overlooking the Rift Valley.</p>
+                    <div class="itinerary-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Accommodation:</span>
+                            <span class="meta-value">Lake Manyara Serena Lodge</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Meals:</span>
+                            <span class="meta-value">Lunch, Dinner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Day 2 -->
+        <div class="destination-card itinerary-card">
+            <div class="card-image" style="background-image: url('images/A-Hippo-in-Lake-Manyara-Arusha-Tanzania.jpg')"></div>
+            <div class="card-content">
+                <div class="card-basic-info">
+                    <div class="day-number">Day 2</div>
+                    <h3>Lake Manyara to Ngorongoro Conservation Area</h3>
+                </div>
+                <div class="card-details">
+                    <p>Morning game drive in Lake Manyara before traveling to the Ngorongoro Conservation Area. Stop at a Maasai village to learn about this iconic pastoralist culture. Arrive at your lodge on the crater rim in time for sunset with spectacular views into the crater.</p>
+                    <div class="itinerary-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Accommodation:</span>
+                            <span class="meta-value">Ngorongoro Serena Safari Lodge</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Meals:</span>
+                            <span class="meta-value">Breakfast, Lunch, Dinner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Day 3 -->
+        <div class="destination-card itinerary-card">
+            <div class="card-image" style="background-image: url('images/elephant1.JPG')"></div>
+            <div class="card-content">
+                <div class="card-basic-info">
+                    <div class="day-number">Day 3</div>
+                    <h3>Ngorongoro Crater Full Day</h3>
+                </div>
+                <div class="card-details">
+                    <p>Descend 600m into the crater floor for a full day of wildlife viewing. The crater's high walls create a natural enclosure for about 25,000 animals, including all the Big Five. Picnic lunch by a hippo pool. Return to your lodge in the late afternoon.</p>
+                    <div class="itinerary-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Accommodation:</span>
+                            <span class="meta-value">Ngorongoro Serena Safari Lodge</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Meals:</span>
+                            <span class="meta-value">Breakfast, Lunch, Dinner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Day 4 -->
+        <div class="destination-card itinerary-card">
+            <div class="card-image" style="background-image: url('images/conservatio.jpg')"></div>
+            <div class="card-content">
+                <div class="card-basic-info">
+                    <div class="day-number">Day 4</div>
+                    <h3>Ngorongoro Crater - Second Game Drive</h3>
+                </div>
+                <div class="card-details">
+                    <p>Morning descent into the crater for another spectacular game drive, focusing on areas you may have missed the previous day. Afternoon at leisure at the lodge with optional activities like nature walks or cultural visits.</p>
+                    <div class="itinerary-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Accommodation:</span>
+                            <span class="meta-value">Ngorongoro Serena Safari Lodge</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Meals:</span>
+                            <span class="meta-value">Breakfast, Lunch, Dinner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Day 5 -->
+        <div class="destination-card itinerary-card">
+            <div class="card-image" style="background-image: url('images/Kilimanjaro-airport.jpg')"></div>
+            <div class="card-content">
+                <div class="card-basic-info">
+                    <div class="day-number">Day 5</div>
+                    <h3>Departure</h3>
+                </div>
+                <div class="card-details">
+                    <p>After breakfast, transfer back to Arusha or Kilimanjaro Airport for your departure flight, with optional stop at a local market for souvenir shopping.</p>
+                    <div class="itinerary-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Accommodation:</span>
+                            <span class="meta-value">None</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Meals:</span>
+                            <span class="meta-value">Breakfast</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Inclusions Section -->
+        <section class="inclusions-section">
+            <div class="container">
+                <div class="inclusions">
+                    <h3>Included</h3>
+                    <ul>
+                        <li>All park fees and crater service fees</li>
+                        <li>4 nights accommodation in luxury lodges</li>
+                        <li>Professional English-speaking safari guide</li>
+                        <li>Private 4x4 safari vehicle with pop-up roof</li>
+                        <li>All meals as specified in itinerary</li>
+                        <li>Bottled drinking water throughout</li>
+                        <li>Airport transfers</li>
+                        <li>Emergency medical evacuation insurance</li>
+                    </ul>
+                </div>
+                <div class="exclusions">
+                    <h3>Not Included</h3>
+                    <ul>
+                        <li>International flights</li>
+                        <li>Tanzania visa fees</li>
+                        <li>Travel insurance</li>
+                        <li>Tips for guides and lodge staff</li>
+                        <li>Alcoholic and soft drinks</li>
+                        <li>Personal expenses</li>
+                        <li>Optional activities</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <div class="section-header">
+                <h2>Safari Gallery</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1567599753820-8b44af3e4f93?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1584295437256-7a1e4d7d0d3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1573843981264-be7f3a9d27d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1581259021841-a16d9f3b8f82?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section class="booking-section">
+            <div class="container">
+                <div class="booking-content">
+                    <h2>Ready for Your Ngorongoro Adventure?</h2>
+                    <p>Contact our safari specialists to book this package or customize it to your preferences.</p>
+                    <div class="booking-buttons">
+                        <button class="cta-button">Book Now</button>
+                        <button class="secondary-button">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="minimal-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/Artboard 3 (1).png" alt="Teva Eco Travel" class="footer-logo">
+                    <p class="footer-tagline">Sustainable Travel Experiences</p>
+                </div>
+                
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Teva Eco Travel. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <span>•</span>
+                    <a href="terms.html">Terms</a>
+                    <span>•</span>
+                    <span>Website by Adams Visuals Ltd</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/serengeti.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </body>
+    </html>
