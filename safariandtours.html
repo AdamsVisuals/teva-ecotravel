@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Day Itinerary | Teva EcoTravel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="icon" href="./favicon_io" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon_io" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="styles/safariandtours.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <ul class="nav-links left-links">
+                    <li class="dropdown">
+                        <a href="#">Destinations <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="serengeti.html">Serengeti National Park</a></li>
+                                <li><a href="tarangire.html">Tarangire National Park</a></li>
+                                <li><a href="ngorongoro.html">Ngorongoro Conservation Area</a></li>
+                                <li><a href="manyara.html">Lake Manyara National Park</a></li>
+                                <li><a href="arusha.html">Arusha National Park</a></li>
+                                <li><a href="zanzibar.html">Zanzibar Beaches</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Experiences <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#">Bush Walks</a></li>
+                                <li><a href="#">Cultural Experiences</a></li>
+                                <li><a href="#">Zanzibar Holidays</a></li>
+                                <li><a href="#">Family Friendly</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/Artboard 3 (1).png" alt="Teva Eco Travel">
+                    </a>
+                </div>
+                
+                <ul class="nav-links right-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Safari & Tours</a></li>
+                </ul>
+                
+                <div class="nav-buttons">
+                    <a href="contact.html" class="btn secondary">Contact</a>
+                    <a href="booking.html" class="btn primary">Book Now</a>
+                </div>
+                
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <ul>
+                <li class="mobile-dropdown">
+                    <a href="destinations.html">Destinations <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">African Safaris</a></li>
+                        <li><a href="#">Asian Adventures</a></li>
+                        <li><a href="#">European Eco-Tours</a></li>
+                        <li><a href="#">South American Treks</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-dropdown">
+                    <a href="experience.html">Experiences <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-submenu">
+                        <li><a href="#">Wildlife Watching</a></li>
+                        <li><a href="#">Cultural Immersion</a></li>
+                        <li><a href="#">Eco-Lodges</a></li>
+                        <li><a href="#">Adventure Travel</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Safari & Tours</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html" class="btn primary">Book Now</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Discover the Wild</h1>
+                <p>Experience breathtaking safaris and unforgettable tours in the world's most spectacular wilderness areas.</p>
+                <button class="cta-button">Explore Tours</button>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section class="overview">
+            <div class="section-header">
+                <h2>Our Safari Experiences</h2>
+                <div class="divider"></div>
+            </div>
+            <p>We specialize in creating immersive wildlife experiences that connect you with nature while maintaining the highest standards of sustainability and ethical practices. Our expert guides will take you on journeys through diverse ecosystems, from the savannas of Africa to the rainforests of South America.</p>
+        </section>
+
+        <!-- Tours Grid Section -->
+        <section class="tours-grid">
+            <div class="section-header">
+                <h2>Featured Safari Tours</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="grid-container">
+                <!-- Tour Card 1 -->
+                <div class="tour-card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1509316785289-025f5b846b35?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
+                    <div class="card-content">
+                        <h3>Serengeti Migration</h3>
+                        <div class="card-details">
+                            <p>Witness the Great Migration across the vast plains of Tanzania.</p>
+                            <button class="learn-more">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour Card 2 -->
+                <div class="tour-card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1581259021841-a16d9f3b8f82?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
+                    <div class="card-content">
+                        <h3>Okavango Delta</h3>
+                        <div class="card-details">
+                            <p>Explore the waterways of Botswana's unique inland delta.</p>
+                            <button class="learn-more">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour Card 3 -->
+                <div class="tour-card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
+                    <div class="card-content">
+                        <h3>Amazon Expedition</h3>
+                        <div class="card-details">
+                            <p>Venture deep into the Amazon rainforest's incredible biodiversity.</p>
+                            <button class="learn-more">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour Card 4 -->
+                <div class="tour-card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
+                    <div class="card-content">
+                        <h3>Patagonia Trek</h3>
+                        <div class="card-details">
+                            <p>Hike through the stunning landscapes of Chilean Patagonia.</p>
+                            <button class="learn-more">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour Card 5 -->
+                <div class="tour-card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1534188753412-3e26d0a618e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
+                    <div class="card-content">
+                        <h3>Rwanda Gorillas</h3>
+                        <div class="card-details">
+                            <p>An intimate encounter with mountain gorillas in their natural habitat.</p>
+                            <button class="learn-more">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour Card 6 -->
+                <div class="tour-card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
+                    <div class="card-content">
+                        <h3>Namib Desert</h3>
+                        <div class="card-details">
+                            <p>Discover the surreal landscapes of the world's oldest desert.</p>
+                            <button class="learn-more">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour Card 7 -->
+                <div class="tour-card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
+                    <div class="card-content">
+                        <h3>Antarctic Cruise</h3>
+                        <div class="card-details">
+                            <p>Journey to the white continent and its incredible wildlife.</p>
+                            <button class="learn-more">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour Card 8 -->
+                <div class="tour-card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
+                    <div class="card-content">
+                        <h3>Borneo Wildlife</h3>
+                        <div class="card-details">
+                            <p>Search for orangutans and pygmy elephants in Borneo's jungles.</p>
+                            <button class="learn-more">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour Card 9 -->
+                <div class="tour-card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1503917988258-f87a78e3c995?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')"></div>
+                    <div class="card-content">
+                        <h3>Madagascar Adventure</h3>
+                        <div class="card-details">
+                            <p>Explore the unique flora and fauna of this island paradise.</p>
+                            <button class="learn-more">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="minimal-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/Artboard 3 (1).png" alt="Teva Eco Travel" class="footer-logo">
+                    <p class="footer-tagline">Sustainable Travel Experiences</p>
+                </div>
+                
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Teva Eco Travel. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <span>•</span>
+                    <a href="terms.html">Terms</a>
+                    <span>•</span>
+                    <span>Website by Adams Visuals Ltd</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/serengeti.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </body>
+    </html>
