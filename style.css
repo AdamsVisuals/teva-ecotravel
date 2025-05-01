@@ -1435,6 +1435,232 @@ header.scrolled .hamburger span {
     }
 }
 
+/* EcoTravel CTA Section */
+.eco-cta {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f8fff8 0%, #e6f7e6 100%);
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .eco-cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    opacity: 0.08;
+    z-index: 0;
+  }
+  
+  .eco-cta-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .eco-cta-content {
+    flex: 1;
+  }
+  
+  .eco-cta-subtitle {
+    display: inline-block;
+    color: #3a7d44;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  .eco-cta-subtitle:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 2px;
+    background: #3a7d44;
+  }
+  
+  .eco-cta-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #1a3a20;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .eco-cta-text {
+    font-size: 1.1rem;
+    color: #4a5a4e;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    max-width: 500px;
+  }
+  
+  .eco-cta-actions {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+  
+  .eco-cta-button {
+    padding: 16px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  
+  .eco-cta-primary {
+    background: linear-gradient(135deg, #3a7d44 0%, #2e6336 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(58, 125, 68, 0.3);
+  }
+  
+  .eco-cta-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(58, 125, 68, 0.4);
+  }
+  
+  .eco-cta-secondary {
+    background: white;
+    color: #3a7d44;
+    border: 1px solid #d1e3d1;
+  }
+  
+  .eco-cta-secondary:hover {
+    background: #f1f8f1;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .eco-cta-features {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  
+  .eco-feature {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: #4a5a4e;
+  }
+  
+  .eco-feature i {
+    color: #3a7d44;
+    font-size: 1rem;
+  }
+  
+  .eco-cta-visual {
+    flex: 1;
+    position: relative;
+    min-height: 400px;
+  }
+  
+  .eco-cta-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .eco-cta-badge {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 2;
+  }
+  
+  .eco-cta-badge i {
+    font-size: 1.8rem;
+    color: #3a7d44;
+  }
+  
+  .eco-cta-badge div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .eco-cta-badge span {
+    font-size: 0.7rem;
+    color: #888;
+  }
+  
+  .eco-cta-badge strong {
+    font-size: 1rem;
+    color: #1a3a20;
+    font-weight: 700;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .eco-cta-container {
+      flex-direction: column;
+      gap: 40px;
+    }
+    
+    .eco-cta-title {
+      font-size: 2.2rem;
+    }
+    
+    .eco-cta-visual {
+      width: 100%;
+      min-height: 300px;
+    }
+    
+    .eco-cta-badge {
+      right: 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .eco-cta {
+      padding: 70px 0;
+    }
+    
+    .eco-cta-actions {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .eco-cta-button {
+      justify-content: center;
+    }
+    
+    .eco-cta-features {
+      gap: 15px;
+    }
+  }
+
 /* Minimal Footer Styles */
 .minimal-footer {
     background-color: var(--moss-green);
