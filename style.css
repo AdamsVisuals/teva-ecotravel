@@ -410,7 +410,7 @@ header.scrolled .hamburger span {
     height: 100vh;
     max-height: 900px;
     overflow: hidden;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'playfair display', serif;
   }
   
   .eco-hero-slideshow {
