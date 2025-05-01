@@ -625,139 +625,175 @@ header.scrolled .secondary {
     line-height: 1.6;
 }
 
-/* Team Section */
-.team-section {
-    padding: 6rem 0;
-    background-color: var(--light-text);
-}
-
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto 3rem;
-}
-
-.team-card {
-    background-color: var(--light-text);
-    border-radius: 10px;
+/* Immersive Team Section with Container Gradient */
+.eco-team-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .eco-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .eco-team-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .eco-section-title {
+    color: #2e6336;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .eco-section-subtitle {
+    color: #5a6d5f;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .eco-team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .eco-team-member {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: var(--transition);
-}
-
-.team-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .eco-team-member:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-.team-image {
-    height: 300px;
-    background-size: cover;
-    background-position: center;
+  }
+  
+  .eco-member-image {
     position: relative;
-}
-
-.social-links {
+    height: 400px;
+  }
+  
+  .eco-member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .eco-content-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
-    padding: 1rem;
+    right: 0;
+    padding: 30px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.3) 70%, transparent 100%);
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .eco-team-member:hover .eco-content-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.4) 70%, transparent 100%);
+  }
+  
+  .eco-member-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  
+  .eco-position {
+    color: #5bbd6a;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+  }
+  
+  .eco-bio {
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+  
+  .eco-social-links {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);
+    gap: 15px;
     opacity: 0;
-    transition: var(--transition);
-}
-
-.team-card:hover .social-links {
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+  }
+  
+  .eco-team-member:hover .eco-social-links {
     opacity: 1;
-}
-
-.social-links a {
-    color: var(--light-text);
-    width: 36px;
-    height: 36px;
-    background-color: var(--moss-green);
-    border-radius: 50%;
+    transform: translateY(0);
+  }
+  
+  .eco-social-links a {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: var(--transition);
-}
-
-.social-links a:hover {
-    background-color: var(--sage-green);
-    transform: translateY(-3px);
-}
-
-.team-info {
-    padding: 1.5rem;
-    text-align: center;
-}
-
-.team-info h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    color: var(--moss-green);
-    margin-bottom: 0.25rem;
-}
-
-.position {
-    display: block;
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    color: white;
     font-size: 0.9rem;
-    color: var(--sage-green);
-    font-weight: 500;
-    margin-bottom: 1rem;
-}
-
-.team-info p {
-    color: var(--dark-text);
-    font-size: 0.9rem;
-    line-height: 1.6;
-}
-
-.local-team {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 2rem;
-    background-color: var(--peanut-cream);
-    border-radius: 10px;
-}
-
-.local-team h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.75rem;
-    color: var(--moss-green);
-    margin-bottom: 1rem;
-}
-
-.local-team p {
-    margin-bottom: 1.5rem;
-    color: var(--dark-text);
-    line-height: 1.7;
-}
-
-.meet-team-btn {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: var(--moss-green);
-    color: var(--light-text);
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: var(--transition);
-}
-
-.meet-team-btn:hover {
-    background-color: var(--sage-green);
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(107, 142, 78, 0.4);
-}
+    transition: all 0.3s ease;
+  }
+  
+  .eco-social-links a:hover {
+    background: #3a7d44;
+    transform: scale(1.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .eco-team-member {
+      max-width: 320px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .eco-team-section {
+      padding: 60px 0;
+    }
+    
+    .eco-section-title {
+      font-size: 2.2rem;
+    }
+    
+    .eco-member-image {
+      height: 360px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .eco-team-members {
+      gap: 25px;
+    }
+    
+    .eco-team-member {
+      min-width: 100%;
+    }
+    
+    .eco-section-title {
+      font-size: 2rem;
+    }
+    
+    .eco-content-overlay {
+      padding: 25px;
+    }
+  }
 
 /* Impact Section */
 .impact-section {
