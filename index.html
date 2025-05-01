@@ -106,37 +106,53 @@
         </div>
     </div>
 
-    <!-- Hero Section with Slider -->
-    <section class="hero">
-        <div class="hero-slider">
-            <div class="slide active" style="background-image: url('images/duluti.JPG');">
-                <div class="slide-content">
-                    <h1>Discover Sustainable Travel</h1>
-                    <p>Experience the world while preserving its beauty for future generations.</p>
-                    <a href="#" class="btn primary">Explore Tours</a>
-                </div>
-            </div>
-            <div class="slide" style="background-image: url('images/bob-junior.JPG');">
-                <div class="slide-content">
-                    <h1>Eco-Friendly Adventures</h1>
-                    <p>Journey responsibly with our carbon-neutral travel options.</p>
-                    <a href="#" class="btn primary">Our Promise</a>
-                </div>
-            </div>
-            <div class="slide" style="background-image: url('images/Acacia.JPG');">
-                <div class="slide-content">
-                    <h1>Connect With Nature</h1>
-                    <p>Immerse yourself in breathtaking landscapes with minimal environmental impact.</p>
-                    <a href="#" class="btn primary">View Destinations</a>
-                </div>
-            </div>
+<!-- Hero Section with Slideshow -->
+<section class="eco-hero">
+    <div class="eco-hero-slideshow">
+      <!-- Slide 1 -->
+      <div class="eco-hero-slide active" style="background-image: url('images/image3.JPG')">
+        <div class="eco-hero-overlay"></div>
+        <div class="eco-hero-content">
+          <h1 class="eco-hero-title">Discover Sustainable Adventures</h1>
+          <p class="eco-hero-subtitle">Explore the world while protecting it with our eco-conscious tours</p>
+          <a href="/tours" class="eco-hero-button">Explore Tours</a>
         </div>
-        <div class="slider-controls">
-            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
-            <div class="slider-dots"></div>
-            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      
+      <!-- Slide 2 -->
+      <div class="eco-hero-slide" style="background-image: url('images/travel.JPG')">
+        <div class="eco-hero-overlay"></div>
+        <div class="eco-hero-content">
+          <h1 class="eco-hero-title">Travel With Purpose</h1>
+          <p class="eco-hero-subtitle">Every journey supports local communities and conservation efforts</p>
+          <a href="/impact" class="eco-hero-button">Our Impact</a>
         </div>
-    </section>
+      </div>
+      
+      <!-- Slide 3 -->
+      <div class="eco-hero-slide" style="background-image: url('images/moses-londo-8U1hcf-lrU0-unsplash.jpg')">
+        <div class="eco-hero-overlay"></div>
+        <div class="eco-hero-content">
+          <h1 class="eco-hero-title">Eco-friendly Tours</h1>
+          <p class="eco-hero-subtitle">Experience breathtaking destinations with zero environmental guilt</p>
+          <a href="/sustainability" class="eco-hero-button">Learn How</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Slideshow Dots -->
+    <div class="eco-hero-dots">
+      <span class="eco-dot active" data-slide="0"></span>
+      <span class="eco-dot" data-slide="1"></span>
+      <span class="eco-dot" data-slide="2"></span>
+    </div>
+    
+    <!-- Scroll Down Indicator -->
+    <div class="eco-hero-scroll">
+      <span>Scroll to Explore</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
 
     <section class="about-section">
         <div class="container">
@@ -164,43 +180,97 @@
                     </a>
                 </div>
             </div>
+  </section>
 
-    <div class="gallery-wrapper">
-      <div class="gallery-track">
-        <!-- Gallery items will be added here -->
-        <div class="gallery-item">
-          <img src="images/zanzibar.JPG" alt="Eco travel destination 1">
-          <div class="gallery-caption">Zanzibar's Pristine Beaches</div>
+<!-- EcoTravel Card Slider -->
+<section class="eco-card-slider-section">
+    <div class="eco-slider-container">
+      <h2 class="eco-section-title">Explore Africa’s Most Inspiring Eco Destinations</h2>
+      <p class="eco-section-subtitle">
+        At Teva Eco Travel, we curate sustainable adventures that connect you with nature, culture, and conservation. 
+        From iconic safaris to untouched island escapes, discover handpicked journeys designed to leave a positive impact 
+        on both you and the planet.
+      </p>  
+      
+    <div class="eco-card-slider">
+      <!-- Card 1: Serengeti -->
+      <div class="eco-card active">
+          <div class="eco-card-image" style="background-image: url('images/serengeti6.webp')">
+            <div class="eco-card-gradient"></div>
+            <div class="eco-card-content">
+              <h3>Serengeti Safari</h3>
+              <p>7-day big five experience</p>
+              <span class="eco-card-price">From $1,150</span>
+            </div>
+          </div>
         </div>
-        <div class="gallery-item">
-          <img src="images/community.JPG" alt="Eco travel destination 2">
-          <div class="gallery-caption">Local Community Adventures</div>
+      
+        <!-- Card 2: Zanzibar -->
+        <div class="eco-card">
+          <div class="eco-card-image" style="background-image: url('images/zanzibar1.jpg')">
+            <div class="eco-card-gradient"></div>
+            <div class="eco-card-content">
+              <h3>Zanzibar Escape</h3>
+              <p>5-day island eco-retreat</p>
+              <span class="eco-card-price">From $950</span>
+            </div>
+          </div>
         </div>
-        <div class="gallery-item">
-          <img src="images/travel.JPG" alt="Eco travel destination 3">
-          <div class="gallery-caption">Safari Through Tanzania</div>
+      
+        <!-- Card 3: Kilimanjaro -->
+        <div class="eco-card">
+          <div class="eco-card-image" style="background-image: url('images/kili.jpg')">
+            <div class="eco-card-gradient"></div>
+            <div class="eco-card-content">
+              <h3>Mount Kilimanjaro Trek</h3>
+              <p>8-day summit adventure</p>
+              <span class="eco-card-price">From $1,999</span>
+            </div>
+          </div>
         </div>
-        <div class="gallery-item">
-          <img src="images/leopard.JPG" alt="Eco travel destination 4">
-          <div class="gallery-caption">Wildlife in Serengeti</div>
+      
+        <!-- Card 4: Ngorongoro -->
+        <div class="eco-card">
+          <div class="eco-card-image" style="background-image: url('images/elephant1.JPG')">
+            <div class="eco-card-gradient"></div>
+            <div class="eco-card-content">
+              <h3>Ngorongoro Crater Tour</h3>
+              <p>1-day UNESCO wildlife drive</p>
+              <span class="eco-card-price">From $350</span>
+            </div>
+          </div>
         </div>
-        <div class="gallery-item">
-          <img src="images/Baloon.JPG" alt="Eco travel destination 5">
-          <div class="gallery-caption">Hot Air Balloon Over Savannah</div>
+      
+        <!-- Card 5: Mahale Mountains -->
+        <div class="eco-card">
+          <div class="eco-card-image" style="background-image: url('images/mazale-chipmunks.jpg')">
+            <div class="eco-card-gradient"></div>
+            <div class="eco-card-content">
+              <h3>Mahale Chimpanzee Trek</h3>
+              <p>4-day remote lake experience</p>
+              <span class="eco-card-price">From $1,100</span>
+            </div>
+          </div>
         </div>
-        <div class="gallery-item">
-          <img src="images/elephant1.JPG" alt="Eco travel destination 6">
-          <div class="gallery-caption">Elephants of Tarangire</div>
+      
+        <!-- Card 6: Victoria Falls -->
+        <div class="eco-card">
+          <div class="eco-card-image" style="background-image: url('images/victoriafalls.webp')">
+            <div class="eco-card-gradient"></div>
+            <div class="eco-card-content">
+              <h3>Victoria Falls</h3>
+              <p>3-day Zambezi eco-tour</p>
+              <span class="eco-card-price">From $870</span>
+            </div>
+          </div>
         </div>
+      </div>      
+      
+      <div class="eco-slider-controls">
+        <button class="eco-slider-prev"><i class="fas fa-chevron-left"></i></button>
+        <div class="eco-slider-dots"></div>
+        <button class="eco-slider-next"><i class="fas fa-chevron-right"></i></button>
       </div>
-    </div>
-    
-    <div class="gallery-nav">
-      <button class="nav-btn prev-btn" aria-label="Previous image">&lt;</button>
-      <div class="gallery-dots">
-        <!-- Dots will be added dynamically -->
-      </div>
-      <button class="nav-btn next-btn" aria-label="Next image">&gt;</button>
     </div>
   </section>
 
@@ -544,7 +614,54 @@
     </div>
 </footer>
 
+<script>
+    // Hero Slideshow Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const slides = document.querySelectorAll('.eco-hero-slide');
+      const dots = document.querySelectorAll('.eco-dot');
+      let currentSlide = 0;
+      let slideInterval;
+      
+      // Initialize slideshow
+      function startSlideshow() {
+        slideInterval = setInterval(nextSlide, 6000);
+      }
+      
+      // Go to specific slide
+      function goToSlide(n) {
+        slides[currentSlide].classList.remove('active');
+        dots[currentSlide].classList.remove('active');
+        currentSlide = (n + slides.length) % slides.length;
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+      }
+      
+      // Next slide
+      function nextSlide() {
+        goToSlide(currentSlide + 1);
+      }
+      
+      // Dot click event
+      dots.forEach(dot => {
+        dot.addEventListener('click', function() {
+          clearInterval(slideInterval);
+          goToSlide(parseInt(this.dataset.slide));
+          startSlideshow();
+        });
+      });
+      
+      // Start slideshow
+      startSlideshow();
+      
+      // Pause on hover (optional)
+      const slideshow = document.querySelector('.eco-hero-slideshow');
+      slideshow.addEventListener('mouseenter', () => clearInterval(slideInterval));
+      slideshow.addEventListener('mouseleave', startSlideshow);
+    });
+    </script>
+
     <script src="script.js"></script>
     <script src="js/cookies.js"></script>
+    <script src="js/featured.js"></script>
 </body>
 </html>
